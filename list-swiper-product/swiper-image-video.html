@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Swiper Patch</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<link rel="stylesheet" href="css/swiper.min.css"/>
+<link rel="stylesheet" href="css/swiper-patch.css"/>
+<script src="http://www.myctstudio.com/app/javascript/jquery/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrap-swiper-patch">
+    <!-- 리스트 2번 -->
+    <div id="swiperPatch2" class="swiper-container swiper-patch">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/bag-02.jpg">
+                </div>
+                <a href="#product1" class="link-product type-video">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">해맑고 싶은 날 패치</dd>
+                        <dt>가격</dt>
+                        <dd>30,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <div class="wrap-video">
+                        <iframe id="RMRy5pPinME" src="https://www.youtube.com/embed/RMRy5pPinME?enablejsapi=1&showinfo=0" allowfullscreen="allowfullscreen" title="16:9"></iframe>
+                    </div>
+                </div>
+                <a href="#product8" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">16:9 비디오 상품상품#8</dd>
+                        <dt>가격</dt>
+                        <dd>88,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/bag-01.jpg">
+                </div>
+                <a href="#product5" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">4:3 비디오 상품상품#5</dd>
+                        <dt>가격</dt>
+                        <dd>525,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/bag-10.png">
+                </div>
+                <a href="#product10" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">9:16 이미지 상품상품#10</dd>
+                        <dt>가격</dt>
+                        <dd>130,000won</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+
+        <!-- 네비게이션 버튼 / 페이징  -->
+        <button type="button" class="swiper-button-prev">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 62" style="enable-background:new 0 0 32 62;" xml:space="preserve">
+                <polyline class="st0" points="31.4,0.5 0.9,31 31.4,61.5 "/>
+            </svg>
+        </button>
+        <button type="button" class="swiper-button-next">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 62" style="enable-background:new 0 0 32 62;" xml:space="preserve">
+                <polyline points="0.5,0.5 31,31 0.5,61.5 "/>
+            </svg>
+        </button>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 리스트 1번 -->
+    <div id="swiperPatch" class="swiper-container swiper-patch">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <div class="wrap-video ratio9-16">
+                        <iframe id="zR3qlx6svv4" src="https://www.youtube.com/embed/zR3qlx6svv4?enablejsapi=1&modestbranding=1&controls=2&showinfo=0" allowfullscreen="allowfullscreen" title="9:16"></iframe>
+                    </div>
+                </div>
+                <a href="#productA-1" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">상품#A-1, 9:16 비디오 이 상품명은 아주 길~~고오~~</dd>
+                        <dt>가격</dt>
+                        <dd>130,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/bag-04.jpg">
+                </div>
+                <a href="#productA-2" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">상품상품#A-2</dd>
+                        <dt>가격</dt>
+                        <dd>5,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/bag-08.png">
+                </div>
+                <a href="#productA-3" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">상품상품#A-3</dd>
+                        <dt>가격</dt>
+                        <dd>1,000,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/bag-01.jpg">
+                </div>
+                <a href="#productA-4" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">4:3 비디오 상품상품#A-4</dd>
+                        <dt>가격</dt>
+                        <dd>525,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/bag-04.jpg">
+                </div>
+                <a href="#productA-6" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">상품상품#A-6</dd>
+                        <dt>가격</dt>
+                        <dd>5,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/bag-08.png">
+                </div>
+                <a href="#productA-7" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">상품상품#A-7</dd>
+                        <dt>가격</dt>
+                        <dd>1,000,000won</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+
+        <!-- 네비게이션 버튼 / 페이징  -->
+        <button type="button" class="swiper-button-prev">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 62" style="enable-background:new 0 0 32 62;" xml:space="preserve">
+                <polyline class="st0" points="31.4,0.5 0.9,31 31.4,61.5 "/>
+            </svg>
+        </button>
+        <button type="button" class="swiper-button-next">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 62" style="enable-background:new 0 0 32 62;" xml:space="preserve">
+                <polyline points="0.5,0.5 31,31 0.5,61.5 "/>
+            </svg>
+        </button>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 리스트 3번 -->
+    <div id="swiperPatch3" class="swiper-container swiper-patch">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/minakwon01.jpg">
+                </div>
+                <a href="#minakwonProduct1" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">[Minakwon] #7</dd>
+                        <dt>가격</dt>
+                        <dd>30,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/minakwon03.jpg">
+                </div>
+                <a href="#minakwonProduct4" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">[Minakwon] #3</dd>
+                        <dt>가격</dt>
+                        <dd>130,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <div class="wrap-video ratio9-16">
+                        <iframe id="ek0eYd2srrs" src="https://www.youtube.com/embed/ek0eYd2srrs?enablejsapi=1&showinfo=0" allowfullscreen="allowfullscreen" title="9:16"></iframe>
+                    </div>
+                </div>
+                <a href="#minakwonProduct2" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">[Minakwon] #8</dd>
+                        <dt>가격</dt>
+                        <dd>88,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/minakwon04.jpg">
+                </div>
+                <a href="#minakwonProduct5" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">[Minakwon] #4</dd>
+                        <dt>가격</dt>
+                        <dd>130,000won</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+
+        <!-- 네비게이션 버튼 / 페이징  -->
+        <button type="button" class="swiper-button-prev">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 62" style="enable-background:new 0 0 32 62;" xml:space="preserve">
+                <polyline class="st0" points="31.4,0.5 0.9,31 31.4,61.5 "/>
+            </svg>
+        </button>
+        <button type="button" class="swiper-button-next">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 62" style="enable-background:new 0 0 32 62;" xml:space="preserve">
+                <polyline points="0.5,0.5 31,31 0.5,61.5 "/>
+            </svg>
+        </button>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 리스트 4번 -->
+    <div id="swiperPatch4" class="swiper-container swiper-patch">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/ssyk01.jpg">
+                </div>
+                <a href="#ssykProduct4" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">[신서유기] 상품상품#1</dd>
+                        <dt>가격</dt>
+                        <dd>130,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <!-- <div class="wrap-product">
+                    <img src="images/patch/bag-03.jpg">
+                </div> -->
+                <div class="wrap-product">
+                    <div class="wrap-video ratio16-9">
+                        <iframe id="SlMi3JlKp8Q" src="https://www.youtube.com/embed/SlMi3JlKp8Q?enablejsapi=1&showinfo=0" allowfullscreen="allowfullscreen" title="1:1"></iframe>
+                    </div>
+                </div>
+                <a href="#product9" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">16:9 비디오 상품상품#9</dd>
+                        <dt>가격</dt>
+                        <dd>230,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/ssyk03.jpg">
+                </div>
+                <a href="#ssykProduct4" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">[신서유기] 상품상품#3</dd>
+                        <dt>가격</dt>
+                        <dd>30,000won</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+
+        <!-- 네비게이션 버튼 / 페이징  -->
+        <button type="button" class="swiper-button-prev">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 62" style="enable-background:new 0 0 32 62;" xml:space="preserve">
+                <polyline class="st0" points="31.4,0.5 0.9,31 31.4,61.5 "/>
+            </svg>
+        </button>
+        <button type="button" class="swiper-button-next">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 62" style="enable-background:new 0 0 32 62;" xml:space="preserve">
+                <polyline points="0.5,0.5 31,31 0.5,61.5 "/>
+            </svg>
+        </button>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 리스트 5번 -->
+    <div id="swiperPatch5" class="swiper-container swiper-patch">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/wannaone02.jpg">
+                </div>
+                <a href="#ssykProduct4" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">[워너원] 상품상품#2</dd>
+                        <dt>가격</dt>
+                        <dd>30,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/wannaone01.jpg">
+                </div>
+                <a href="#ssykProduct4" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">[워너원] 상품상품#1</dd>
+                        <dt>가격</dt>
+                        <dd>8,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <!-- <div class="wrap-product">
+                    <img src="images/patch/bag-01.jpg">
+                </div> -->
+                <div class="wrap-product">
+                    <div class="wrap-video ratio4-3">
+                        <iframe id="mM5_T-F1Yn4" src="https://www.youtube.com/embed/mM5_T-F1Yn4?enablejsapi=1&showinfo=0" allowfullscreen="allowfullscreen" title="4:3"></iframe>
+                    </div>
+                </div>
+                <a href="#product5" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">4:3 비디오 상품상품#5</dd>
+                        <dt>가격</dt>
+                        <dd>525,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/wannaone03.jpg">
+                </div>
+                <a href="#ssykProduct4" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">[워너원] 상품상품#3</dd>
+                        <dt>가격</dt>
+                        <dd>18,000won</dd>
+                    </dl>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="wrap-product">
+                    <img src="images/patch/wannaone04.jpg">
+                </div>
+                <a href="#ssykProduct4" class="link-product">
+                    <dl class="description">
+                        <dt>상품명</dt>
+                        <dd class="product-name">[워너원] 상품상품#4</dd>
+                        <dt>가격</dt>
+                        <dd>230,000won</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+
+        <!-- 네비게이션 버튼 / 페이징  -->
+        <button type="button" class="swiper-button-prev">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 62" style="enable-background:new 0 0 32 62;" xml:space="preserve">
+                <polyline class="st0" points="31.4,0.5 0.9,31 31.4,61.5 "/>
+            </svg>
+        </button>
+        <button type="button" class="swiper-button-next">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 62" style="enable-background:new 0 0 32 62;" xml:space="preserve">
+                <polyline points="0.5,0.5 31,31 0.5,61.5 "/>
+            </svg>
+        </button>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<!-- 각 리스트의 썸네일 설정 -->
+<div id="swiperPatchThumb" class="swiper-container swiper-patch-thumb">
+    <div class="swiper-wrapper">
+        <a href="#swiperPatch2" class="swiper-slide active" style="background-image:url(images/patch/bag-02.jpg)"></a>
+        <a href="#swiperPatch" class="swiper-slide" style="background-image:url(https://img.youtube.com/vi/zR3qlx6svv4/0.jpg)"></a>
+        <a href="#swiperPatch3" class="swiper-slide" style="background-image:url(images/patch/minakwon01.jpg)"></a>
+        <a href="#swiperPatch4" class="swiper-slide" style="background-image:url(images/patch/ssyk01.jpg)"></a>
+        <a href="#swiperPatch5" class="swiper-slide" style="background-image:url(images/patch/wannaone02.jpg)"></a>
+    </div>
+</div>
+
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/swiper-patch.js"></script>
+</body>
+</html>
