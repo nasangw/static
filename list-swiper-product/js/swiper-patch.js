@@ -2,7 +2,8 @@
 
 // Youtube API 로드
 var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
+// tag.src = "https://www.youtube.com/iframe_api";
+tag.src = "./js/iframe_api.js";
 var firstScriptTag = document.querySelectorAll('head script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
