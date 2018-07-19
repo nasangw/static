@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="stylesheet" type="text/css" href="./index.css">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<title>Dungeon map</title>
+</head>
+<body>
+<div class="tab-contents tab2-section-dungeons">
+    <div id="dungeons" class="dungeons level-grade1">
+        <div id="dungeonsHeader" class="dungeons__header">
+            <div class="tribes">
+                <button type="button" class="btn btn-tribes" data-tribe="besides-arteia">아르테이아 외</button>
+                <button type="button" class="btn btn-tribes" data-tribe="arteia">아르테이아</button>
+            </div>
+            <button type="button" class="btn btn-level" data-level-grade="1">Lv1 ~ 20</button>
+            <button type="button" class="btn btn-level" data-level-grade="2">Lv20 ~ 40</button>
+            <button type="button" class="btn btn-level" data-level-grade="3">Lv40 ~ 75</button>
+            <button type="button" class="btn btn-level" data-level-grade="4">Lv76 ~ 84</button>
+            <button type="button" class="btn btn-level" data-level-grade="5">Lv85 ~ 95</button>
+            <button type="button" class="btn btn-level" data-level-grade="6">Lv95 ~ 100</button>
+            <button type="button" class="btn btn-level" data-level-grade="7">Lv100 ~ 120</button>
+        </div>
+
+        <!-- 던전 명단 -->
+        <div id="dungeonTable" class="dungeons__table">
+            <table class="table" cellspacing="0">
+                <colgroup>
+                    <col style="width: auto;">
+                    <col style="width: 35%;">
+                    <col style="width: 15%;">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col">추천사냥터</th>
+                    <th scope="col">레벨구간</th>
+                    <th scope="col">위치</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <!-- 던전 스팟 -->
+        <ul id="dungeonSpotList" class="dungeons__spot-list level-grade1" data-tribe="besides-arteia"></ul>
+    </div>
+</div>
+
+<script src="./index.js"></script>
+<script>
+// 추천 사냥터 소개
+var d = new dungeons({
+	isDefaultArteia: false, 
+	defaultLevelGrade: 1,
+});
+</script>
+</body>
+</html>

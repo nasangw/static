@@ -1,0 +1,1256 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+body, th, td, input, button, form {
+  font-family: Malgun Gothic, '\B9D1\C740   \ACE0\B515', NanumGothic, '\B098\B214\ACE0\B515'; }
+
+body {
+  position: relative;
+  background-color: #f5f5f5; }
+
+button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer; }
+
+.header {
+  position: relative;
+  height: 607px;
+  background: url(/img/bg_header.jpg) 50% 0 no-repeat; }
+  .header .logo {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    margin-left: -600px;
+    width: 142px;
+    height: 24px;
+    line-height: 0;
+    font-size: 0;
+    background: url(/img/logo_lineage2.png) no-repeat; }
+
+.tab {
+  margin: 0 auto;
+  width: 1200px; }
+  .tab:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .tab__item {
+    float: left;
+    line-height: 0;
+    font-size: 0; }
+    .tab__item:first-child .link {
+      margin-left: 0;
+      width: 300px; }
+    .tab__item.on .link {
+      height: 104px;
+      background-position-y: -100px !important; }
+    .tab__item.m1 .link {
+      background-position: 0 0; }
+    .tab__item.m2 .link {
+      background-position: -300px 0; }
+    .tab__item.m3 .link {
+      background-position: -600px 0; }
+    .tab__item.m4 .link {
+      background-position: -900px 0; }
+    .tab__item .link {
+      display: block;
+      margin-left: 1px;
+      width: 299px;
+      height: 84px;
+      background: url(/img/bg_tab.png) no-repeat; }
+
+.guide-desc {
+  width: 1200px;
+  margin: 0 auto;
+  height: 233px;
+  line-height: 0;
+  font-size: 0; }
+  .guide-desc.tab1 {
+    background: url(/img/bg_tab1_guide.png) 130px 29px no-repeat; }
+  .guide-desc.tab2 {
+    height: 228px;
+    background: url(/img/bg_tab2_guide.png) 124px 29px no-repeat; }
+
+.tab-contents {
+  overflow: hidden;
+  position: relative;
+  min-height: 300px; }
+  .tab-contents:before, .tab-contents:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 680px;
+    height: 100%; }
+  .tab-contents:before {
+    left: 50%;
+    margin-left: -1280px; }
+  .tab-contents:after {
+    right: 50%;
+    margin-right: -1280px; }
+  .tab-contents .inner {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    text-transform: capitalize;
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: inherit; }
+  .tab-contents.tab1-section1 {
+    height: 860px; }
+    .tab-contents.tab1-section1:before {
+      background: url(/img/bg_before_t1s1.jpg) no-repeat; }
+    .tab-contents.tab1-section1:after {
+      background: url(/img/bg_after_t1s1.jpg) no-repeat; }
+    .tab-contents.tab1-section1 .inner {
+      background: url(/img/bg_tab1_contents1.jpg) no-repeat; }
+  .tab-contents.tab1-section2 {
+    height: 851px; }
+    .tab-contents.tab1-section2:before {
+      background: url(/img/bg_before_t1s2.jpg) no-repeat; }
+    .tab-contents.tab1-section2:after {
+      background: url(/img/bg_after_t1s2.jpg) no-repeat; }
+    .tab-contents.tab1-section2 .inner {
+      background: url(/img/bg_tab1_contents2.jpg) no-repeat; }
+    .tab-contents.tab1-section2 .btn {
+      position: absolute;
+      text-indent: -119988px;
+      overflow: hidden;
+      text-align: left;
+      text-transform: capitalize; }
+      .tab-contents.tab1-section2 .btn.get-gift {
+        top: 668px;
+        width: 194px;
+        height: 47px; }
+        .tab-contents.tab1-section2 .btn.get-gift.new-user {
+          left: 203px; }
+        .tab-contents.tab1-section2 .btn.get-gift.return-user {
+          left: 803px; }
+      .tab-contents.tab1-section2 .btn.view-detail {
+        top: 520px;
+        left: 540px;
+        width: 120px;
+        height: 120px; }
+  .tab-contents.tab2-section-tribes {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -0.75px;
+    background: url(/img/bg_tribes_gradient.jpg) 50% 0 no-repeat;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .tab-contents.tab2-section-tribes .message {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      text-align: center; }
+    .tab-contents.tab2-section-tribes .title {
+      margin-bottom: 0.5em;
+      line-height: 1;
+      font-size: 28px;
+      font-weight: 500; }
+    .tab-contents.tab2-section-tribes .desc {
+      margin: 0;
+      line-height: 1;
+      font-size: 36px;
+      font-weight: 100; }
+    .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide {
+      height: 1224px;
+      background-position: 50% 0;
+      background-repeat: no-repeat; }
+      .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide.human {
+        background-image: url(/lineage2_v2/service/welcome_2018/images/bg_tribes_human.jpg); }
+        .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide.human .btn {
+          bottom: 30px; }
+      .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide.elf {
+        background-image: url(/lineage2_v2/service/welcome_2018/images/bg_tribes_elf.jpg); }
+        .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide.elf .btn {
+          bottom: 100px; }
+      .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide.darkelf {
+        background-image: url(/lineage2_v2/service/welcome_2018/images/bg_tribes_darkelf.jpg); }
+        .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide.darkelf .btn {
+          bottom: 130px; }
+      .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide.orc {
+        background-image: url(/lineage2_v2/service/welcome_2018/images/bg_tribes_orc.jpg); }
+      .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide.dwarf {
+        background-image: url(/lineage2_v2/service/welcome_2018/images/bg_tribes_dwarf.jpg); }
+      .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide.kamael {
+        background-image: url(/lineage2_v2/service/welcome_2018/images/bg_tribes_kamael.jpg); }
+      .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide.arteia {
+        background-image: url(/lineage2_v2/service/welcome_2018/images/bg_tribes_arteia.jpg); }
+      .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide .btn {
+        position: absolute;
+        bottom: 209px;
+        left: 50%;
+        height: 50px;
+        line-height: 0;
+        font-size: 0; }
+        .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide .btn.btn-show-layer {
+          margin-left: -180px;
+          width: 170px; }
+        .tab-contents.tab2-section-tribes .swiper-wrapper .swiper-slide .btn.btn-detail-class {
+          margin-left: 10px;
+          width: 220px; }
+    .tab-contents.tab2-section-tribes .swiper-pagination-bullets {
+      bottom: auto;
+      top: 203px; }
+      .tab-contents.tab2-section-tribes .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 0 0 12px;
+        width: 84px;
+        height: 84px;
+        line-height: 84px;
+        color: #578bd5;
+        font-weight: 200;
+        font-size: 16px;
+        background-color: #2c396f;
+        vertical-align: top;
+        opacity: 1; }
+        .tab-contents.tab2-section-tribes .swiper-pagination-bullets .swiper-pagination-bullet:first-child {
+          margin-left: 0; }
+        .tab-contents.tab2-section-tribes .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+          color: #254290;
+          background-color: #4dd5e5; }
+  .tab-contents.tab2-section-reward {
+    margin: 0 auto;
+    width: 1200px; }
+  .tab-contents.tab2-section-apply {
+    margin: 80px auto 65px;
+    width: 1200px;
+    color: #222;
+    letter-spacing: -2px; }
+    .tab-contents.tab2-section-apply .title {
+      line-height: 1;
+      font-size: 28px;
+      font-weight: 600;
+      text-align: center; }
+    .tab-contents.tab2-section-apply .title-desc {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 100;
+      text-align: center; }
+  .tab-contents.tab2-section-dungeons {
+    margin: 0 auto;
+    width: 1200px; }
+    .tab-contents.tab2-section-dungeons .dungeons {
+      overflow: hidden;
+      position: relative;
+      border-radius: 6px;
+      height: 1037px;
+      background: url(/img/bg_map_dungeons.jpg) no-repeat; }
+      .tab-contents.tab2-section-dungeons .dungeons.level-grade2 .dungeons__spot-list .btn-marker {
+        background-position: 0 -50px; }
+      .tab-contents.tab2-section-dungeons .dungeons.level-grade3 .dungeons__spot-list .btn-marker {
+        background-position: 0 -100px; }
+      .tab-contents.tab2-section-dungeons .dungeons.level-grade4 .dungeons__spot-list .btn-marker {
+        background-position: 0 -150px; }
+      .tab-contents.tab2-section-dungeons .dungeons.level-grade5 .dungeons__spot-list .btn-marker {
+        background-position: 0 -200px; }
+      .tab-contents.tab2-section-dungeons .dungeons.level-grade6 .dungeons__spot-list .btn-marker {
+        background-position: 0 -250px; }
+      .tab-contents.tab2-section-dungeons .dungeons.level-grade7 .dungeons__spot-list .btn-marker {
+        background-position: 0 -300px; }
+      .tab-contents.tab2-section-dungeons .dungeons.init .dungeons__header {
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0); }
+      .tab-contents.tab2-section-dungeons .dungeons__header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        border-radius: 6px 6px 0 0;
+        width: 100%;
+        height: 106px;
+        text-align: center;
+        background-color: rgba(52, 57, 65, 0.8);
+        -webkit-transform: translateY(-106px);
+            -ms-transform: translateY(-106px);
+                transform: translateY(-106px);
+        -webkit-transition: -webkit-transform 500ms ease;
+        transition: -webkit-transform 500ms ease;
+        -o-transition: transform 500ms ease;
+        transition: transform 500ms ease;
+        transition: transform 500ms ease, -webkit-transform 500ms ease; }
+        .tab-contents.tab2-section-dungeons .dungeons__header:after {
+          content: '';
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle; }
+        .tab-contents.tab2-section-dungeons .dungeons__header .tribes {
+          display: inline-block;
+          margin-right: 40px;
+          vertical-align: middle; }
+          .tab-contents.tab2-section-dungeons .dungeons__header .tribes:after {
+            content: "";
+            display: table;
+            clear: both; }
+          .tab-contents.tab2-section-dungeons .dungeons__header .tribes .btn-tribes {
+            float: left;
+            border-radius: 2px;
+            width: 203px;
+            height: 48px;
+            line-height: 48px;
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+            color: #fff;
+            background-color: #313844; }
+            .tab-contents.tab2-section-dungeons .dungeons__header .tribes .btn-tribes.active {
+              color: #333;
+              background-color: #fff; }
+        .tab-contents.tab2-section-dungeons .dungeons__header .btn-level {
+          display: inline-block;
+          margin-right: 4px;
+          border-radius: 15px;
+          width: 88px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 13px;
+          color: #8994a6;
+          background-color: #313844;
+          vertical-align: middle; }
+          .tab-contents.tab2-section-dungeons .dungeons__header .btn-level.active {
+            color: #333;
+            background-color: #57c2df; }
+          .tab-contents.tab2-section-dungeons .dungeons__header .btn-level:last-child {
+            margin-right: 0; }
+      .tab-contents.tab2-section-dungeons .dungeons__spot-list.active .dungeon {
+        opacity: 1; }
+      .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon {
+        opacity: 0;
+        position: absolute;
+        min-width: 100px;
+        -webkit-transition: opacity 500ms ease;
+        -o-transition: opacity 500ms ease;
+        transition: opacity 500ms ease; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon.reverse .tooltip {
+          position: absolute;
+          top: auto;
+          right: 80px;
+          bottom: 8px;
+          left: auto;
+          min-width: 100px; }
+          .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon.reverse .tooltip:before {
+            top: auto;
+            bottom: -14px;
+            right: 2px;
+            left: auto;
+            border-top: 10px solid #fff;
+            border-right: 7px solid transparent; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon.active .tooltip {
+          opacity: 1; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon.active .btn-marker {
+          -webkit-animation-name: effect-wobble-vertical;
+                  animation-name: effect-wobble-vertical;
+          -webkit-animation-duration: 800ms;
+                  animation-duration: 800ms;
+          -webkit-animation-timing-function: ease-in-out;
+                  animation-timing-function: ease-in-out;
+          -webkit-animation-iteration-count: 1;
+                  animation-iteration-count: 1; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(1) {
+          -webkit-transition-delay: 250ms;
+               -o-transition-delay: 250ms;
+                  transition-delay: 250ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(2) {
+          -webkit-transition-delay: 500ms;
+               -o-transition-delay: 500ms;
+                  transition-delay: 500ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(3) {
+          -webkit-transition-delay: 750ms;
+               -o-transition-delay: 750ms;
+                  transition-delay: 750ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(4) {
+          -webkit-transition-delay: 1000ms;
+               -o-transition-delay: 1000ms;
+                  transition-delay: 1000ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(5) {
+          -webkit-transition-delay: 1250ms;
+               -o-transition-delay: 1250ms;
+                  transition-delay: 1250ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(6) {
+          -webkit-transition-delay: 1500ms;
+               -o-transition-delay: 1500ms;
+                  transition-delay: 1500ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(7) {
+          -webkit-transition-delay: 1750ms;
+               -o-transition-delay: 1750ms;
+                  transition-delay: 1750ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(8) {
+          -webkit-transition-delay: 2000ms;
+               -o-transition-delay: 2000ms;
+                  transition-delay: 2000ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(9) {
+          -webkit-transition-delay: 2250ms;
+               -o-transition-delay: 2250ms;
+                  transition-delay: 2250ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(10) {
+          -webkit-transition-delay: 2500ms;
+               -o-transition-delay: 2500ms;
+                  transition-delay: 2500ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(11) {
+          -webkit-transition-delay: 2750ms;
+               -o-transition-delay: 2750ms;
+                  transition-delay: 2750ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(12) {
+          -webkit-transition-delay: 3000ms;
+               -o-transition-delay: 3000ms;
+                  transition-delay: 3000ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(13) {
+          -webkit-transition-delay: 3250ms;
+               -o-transition-delay: 3250ms;
+                  transition-delay: 3250ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon:nth-child(14) {
+          -webkit-transition-delay: 3500ms;
+               -o-transition-delay: 3500ms;
+                  transition-delay: 3500ms; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon .btn-marker {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 10;
+          width: 26px;
+          height: 26px;
+          background: url(/img/sp_pointer.png) no-repeat; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon .tooltip {
+          position: relative;
+          top: 0;
+          left: 36px;
+          z-index: 20;
+          border-radius: 2px;
+          padding: 4px 10px;
+          line-height: 18px;
+          font-size: 12px;
+          color: #333;
+          background-color: #fff;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.5) -3px 3px 10px;
+                  box-shadow: rgba(0, 0, 0, 0.5) -3px 3px 10px;
+          opacity: 0;
+          -webkit-transition: opacity 500ms 200ms ease;
+          -o-transition: opacity 500ms 200ms ease;
+          transition: opacity 500ms 200ms ease; }
+          .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon .tooltip:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            margin-top: -5px;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 10px solid #fff; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon__name {
+          display: inline;
+          vertical-align: top; }
+        .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon__level {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 11px;
+          color: #666; }
+          .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon__level:before {
+            content: '';
+            display: inline-block;
+            margin: 0 4px;
+            width: 1px;
+            height: 8px;
+            background-color: #797979;
+            vertical-align: middle; }
+      .tab-contents.tab2-section-dungeons .dungeons__table {
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: absolute;
+        top: 140px;
+        left: 35px;
+        z-index: 20;
+        border-radius: 6px;
+        max-height: 615px;
+        width: 280px;
+        -webkit-transform: translateX(-315px);
+            -ms-transform: translateX(-315px);
+                transform: translateX(-315px);
+        -webkit-transition: -webkit-transform 500ms ease;
+        transition: -webkit-transform 500ms ease;
+        -o-transition: transform 500ms ease;
+        transition: transform 500ms ease;
+        transition: transform 500ms ease, -webkit-transform 500ms ease; }
+        .tab-contents.tab2-section-dungeons .dungeons__table.active {
+          -webkit-transform: translateX(0);
+              -ms-transform: translateX(0);
+                  transform: translateX(0); }
+        .tab-contents.tab2-section-dungeons .dungeons__table.enable-click .table tbody tr {
+          cursor: pointer; }
+        .tab-contents.tab2-section-dungeons .dungeons__table .table {
+          table-layout: fixed;
+          max-width: 100%;
+          width: 100%;
+          border-collapse: separate; }
+          .tab-contents.tab2-section-dungeons .dungeons__table .table th, .tab-contents.tab2-section-dungeons .dungeons__table .table td {
+            padding: 0;
+            font-size: 13px;
+            font-weight: 200; }
+          .tab-contents.tab2-section-dungeons .dungeons__table .table thead th {
+            height: 40px;
+            color: #999;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.65); }
+          .tab-contents.tab2-section-dungeons .dungeons__table .table tbody tr {
+            cursor: not-allowed; }
+            .tab-contents.tab2-section-dungeons .dungeons__table .table tbody tr:last-child td {
+              border-width: 0; }
+          .tab-contents.tab2-section-dungeons .dungeons__table .table tbody .active td {
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.75); }
+            .tab-contents.tab2-section-dungeons .dungeons__table .table tbody .active td .marker {
+              background-position: 0 -400px; }
+          .tab-contents.tab2-section-dungeons .dungeons__table .table tbody td {
+            border-bottom: 1px solid rgba(218, 218, 218, 0.2);
+            padding-left: 20px;
+            height: 47px;
+            color: #c9c8c2;
+            background-color: rgba(67, 64, 59, 0.7); }
+            .tab-contents.tab2-section-dungeons .dungeons__table .table tbody td.level {
+              padding-left: 10px; }
+            .tab-contents.tab2-section-dungeons .dungeons__table .table tbody td.center {
+              padding-left: 0;
+              text-align: center; }
+            .tab-contents.tab2-section-dungeons .dungeons__table .table tbody td .marker {
+              display: inline-block;
+              width: 20px;
+              height: 26px;
+              background: url(/img/sp_pointer.png) no-repeat 0 -350px; }
+  .tab-contents .list-reward {
+    width: 1200px; }
+    .tab-contents .list-reward:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .tab-contents .list-reward__item {
+      overflow: hidden;
+      float: left;
+      margin: 16px 0 0 13px;
+      border: 1px solid #dedede;
+      border-radius: 8px;
+      padding-top: 10px;
+      width: 122px;
+      height: 172px;
+      background-color: #fff;
+      text-align: center;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .tab-contents .list-reward__item.first-on-rows {
+        margin-left: 0;
+        width: 120px; }
+      .tab-contents .list-reward__item:last-child {
+        width: 797px; }
+      .tab-contents .list-reward__item.enabled {
+        background-color: #ccc; }
+        .tab-contents .list-reward__item.enabled .btn-get-reward {
+          cursor: pointer;
+          pointer-events: initial;
+          opacity: 1; }
+        .tab-contents .list-reward__item.enabled .level {
+          background-color: #000 !important; }
+      .tab-contents .list-reward__item.complete {
+        position: relative; }
+        .tab-contents .list-reward__item.complete:after {
+          content: 'Mission Clear';
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 20;
+          width: 100%;
+          height: 100%;
+          color: #fff;
+          background-color: rgba(0, 0, 0, 0.7); }
+      .tab-contents .list-reward__item.level100 {
+        width: 257px; }
+      .tab-contents .list-reward__item.level80s-late.enabled {
+        background-color: #60cbb8; }
+      .tab-contents .list-reward__item.level80s-late .level {
+        background-color: #60cbb8; }
+      .tab-contents .list-reward__item.level90s-early.enabled {
+        background-color: #67b3d2; }
+      .tab-contents .list-reward__item.level90s-early .level {
+        background-color: #67b3d2; }
+      .tab-contents .list-reward__item.level90s-late.enabled {
+        background-color: #8495d3; }
+      .tab-contents .list-reward__item.level90s-late .level {
+        background-color: #8495d3; }
+      .tab-contents .list-reward__item.level100s-early.enabled {
+        background-color: #9170cc; }
+      .tab-contents .list-reward__item.level100s-early .level {
+        background-color: #9170cc; }
+      .tab-contents .list-reward__item.level100s-late.enabled {
+        background-color: #c666cc; }
+      .tab-contents .list-reward__item.level100s-late .level {
+        background-color: #c666cc; }
+      .tab-contents .list-reward__item .level {
+        margin: 0 auto;
+        border-radius: 28px;
+        width: 56px;
+        height: 56px;
+        line-height: 56px;
+        font-size: 10px;
+        text-align: center;
+        color: #fff;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+        .tab-contents .list-reward__item .level__emphasis {
+          font-size: 20px;
+          font-weight: 700;
+          font-style: normal; }
+      .tab-contents .list-reward__item .items {
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 64px;
+        line-height: 16px;
+        color: #333;
+        font-size: 12px; }
+      .tab-contents .list-reward__item .btn-get-reward {
+        border: 1px solid #aaa;
+        border-radius: 15px;
+        padding: 0 20px;
+        height: 30px;
+        line-height: 28px;
+        color: #000;
+        font-size: 12px;
+        letter-spacing: -0.75px;
+        background-color: #fff;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        cursor: not-allowed;
+        pointer-events: none;
+        opacity: .3; }
+
+.apply-levelup {
+  margin: 40px 0 0; }
+  .apply-levelup dt {
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1;
+    color: #333;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: -1px; }
+  .apply-levelup dd {
+    position: relative;
+    padding: 30px 0 0 30px;
+    height: 127px;
+    background: url(/img/bg_apply_levelup.png) no-repeat;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .apply-levelup dd .btn-apply-levelup {
+      margin-left: 34px;
+      width: 238px;
+      height: 60px;
+      line-height: 0;
+      font-size: 0;
+      background: url(/img/btn_apply_levelup.png) no-repeat; }
+    .apply-levelup dd .txt-complete-levelup {
+      width: 292px;
+      height: 60px;
+      line-height: 0;
+      font-size: 0;
+      background: url(/img/txt_complete_levelup.png) 0 50% no-repeat; }
+    .apply-levelup dd .order-mission {
+      text-indent: -119988px;
+      overflow: hidden;
+      text-align: left;
+      text-transform: capitalize; }
+
+.shortcut-area {
+  position: relative;
+  margin: 20px auto;
+  width: 1200px;
+  height: 156px;
+  background: url(/img/bg_shortcut_area.png) no-repeat;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize; }
+  .shortcut-area .btn {
+    position: absolute; }
+    .shortcut-area .btn.download {
+      top: 78px;
+      left: 198px;
+      width: 196px;
+      height: 40px; }
+    .shortcut-area .btn.secure-service {
+      top: 78px;
+      left: 800px;
+      width: 196px;
+      height: 40px; }
+
+.footer {
+  margin: 60px 0; }
+  .footer .copyright {
+    margin: 0;
+    text-align: center; }
+  .footer .sns {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    margin-right: -485px; }
+
+.wrap-layer {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100005;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .wrap-layer.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .wrap-layer .layer {
+    position: relative;
+    background-color: #fff; }
+    .wrap-layer .layer.detail-gift {
+      text-indent: -119988px;
+      overflow: hidden;
+      text-align: left;
+      text-transform: capitalize;
+      width: 648px;
+      height: 722px;
+      background: url(/img/bg_layer_detail_gift.png) no-repeat; }
+      .wrap-layer .layer.detail-gift .btn-close {
+        top: 49px;
+        right: 42px; }
+    .wrap-layer .layer.awaken {
+      border-radius: 8px;
+      padding: 40px 20px 20px;
+      width: 800px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .wrap-layer .layer.awaken .btn-close {
+        top: 20px;
+        right: 20px;
+        background: url(/img/btn_close_layer.png) 50% 50% no-repeat; }
+    .wrap-layer .layer .btn-close {
+      text-indent: -119988px;
+      overflow: hidden;
+      text-align: left;
+      text-transform: capitalize;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0;
+      width: 30px;
+      height: 30px;
+      background-color: transparent; }
+    .wrap-layer .layer__table {
+      table-layout: fixed;
+      max-width: 100%;
+      width: 100%;
+      border-collapse: separate;
+      border: 1px solid #f1f1f1;
+      border-width: 1px 1px 0 0; }
+      .wrap-layer .layer__table th, .wrap-layer .layer__table td {
+        border: 1px solid #f1f1f1;
+        border-width: 0 0 1px 1px;
+        font-size: 13px;
+        font-family: malgun Gothic, '\B9D1\C740   \ACE0\B515', nanumGothic, '\B098\B214\ACE0\B515'; }
+      .wrap-layer .layer__table thead th {
+        height: 40px;
+        font-weight: bold;
+        background-color: #f1f1f1; }
+      .wrap-layer .layer__table tbody td {
+        padding: 0 0 0 20px;
+        height: 50px; }
+        .wrap-layer .layer__table tbody td.align-center {
+          padding-left: 0;
+          text-align: center; }
+        .wrap-layer .layer__table tbody td em {
+          display: block;
+          color: #3fe4c5;
+          font-style: normal; }
+    .wrap-layer .layer__title {
+      margin-bottom: 20px;
+      color: #333;
+      line-height: 1;
+      font-size: 24px;
+      font-weight: 600; }
+
+.blind {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize; }
+
+@-webkit-keyframes effect-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px); }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+            transform: translateX(-6px); }
+  49.95% {
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px); }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px); }
+  83.25% {
+    -webkit-transform: translateX(1px);
+            transform: translateX(1px); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@keyframes effect-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px); }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+            transform: translateX(-6px); }
+  49.95% {
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px); }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px); }
+  83.25% {
+    -webkit-transform: translateX(1px);
+            transform: translateX(1px); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@-webkit-keyframes effect-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px); }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px); }
+  49.95% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px); }
+  83.25% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes effect-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px); }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px); }
+  49.95% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px); }
+  83.25% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@-webkit-keyframes effect-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+            transform: translateX(3px) rotate(2deg); }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+            transform: translateX(-3px) rotate(-2deg); }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+            transform: translateX(3px) rotate(2deg); }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+            transform: translateX(-3px) rotate(-2deg); }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+            transform: translateX(2px) rotate(1deg); }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+            transform: translateX(-2px) rotate(-1deg); }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+            transform: translateX(2px) rotate(1deg); }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+            transform: translateX(-2px) rotate(-1deg); }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+            transform: translateX(1px) rotate(0); }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+            transform: translateX(-1px) rotate(0); } }
+
+@keyframes effect-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+            transform: translateX(3px) rotate(2deg); }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+            transform: translateX(-3px) rotate(-2deg); }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+            transform: translateX(3px) rotate(2deg); }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+            transform: translateX(-3px) rotate(-2deg); }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+            transform: translateX(2px) rotate(1deg); }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+            transform: translateX(-2px) rotate(-1deg); }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+            transform: translateX(2px) rotate(1deg); }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+            transform: translateX(-2px) rotate(-1deg); }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+            transform: translateX(1px) rotate(0); }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+            transform: translateX(-1px) rotate(0); } }
