@@ -318,7 +318,7 @@ button {
 .header {
   position: relative;
   height: 607px;
-  background: url(/public/img/bg_header.jpg) 50% 0 no-repeat; }
+  background: url(/static/dungeon-map/public/img/bg_header.jpg) 50% 0 no-repeat; }
   .header .logo {
     position: absolute;
     top: 25px;
@@ -328,7 +328,7 @@ button {
     height: 24px;
     line-height: 0;
     font-size: 0;
-    background: url(/public/img/logo_lineage2.png) no-repeat; }
+    background: url(/static/dungeon-map/public/img/logo_lineage2.png) no-repeat; }
 
 .tab {
   margin: 0 auto;
@@ -360,7 +360,7 @@ button {
       margin-left: 1px;
       width: 299px;
       height: 84px;
-      background: url(/public/img/bg_tab.png) no-repeat; }
+      background: url(/static/dungeon-map/public/img/bg_tab.png) no-repeat; }
 
 .guide-desc {
   width: 1200px;
@@ -369,10 +369,10 @@ button {
   line-height: 0;
   font-size: 0; }
   .guide-desc.tab1 {
-    background: url(/public/img/bg_tab1_guide.png) 130px 29px no-repeat; }
+    background: url(/static/dungeon-map/public/img/bg_tab1_guide.png) 130px 29px no-repeat; }
   .guide-desc.tab2 {
     height: 228px;
-    background: url(/public/img/bg_tab2_guide.png) 124px 29px no-repeat; }
+    background: url(/static/dungeon-map/public/img/bg_tab2_guide.png) 124px 29px no-repeat; }
 
 .tab-contents {
   overflow: hidden;
@@ -402,19 +402,19 @@ button {
   .tab-contents.tab1-section1 {
     height: 860px; }
     .tab-contents.tab1-section1:before {
-      background: url(/public/img/bg_before_t1s1.jpg) no-repeat; }
+      background: url(/static/dungeon-map/public/img/bg_before_t1s1.jpg) no-repeat; }
     .tab-contents.tab1-section1:after {
-      background: url(/public/img/bg_after_t1s1.jpg) no-repeat; }
+      background: url(/static/dungeon-map/public/img/bg_after_t1s1.jpg) no-repeat; }
     .tab-contents.tab1-section1 .inner {
-      background: url(/public/img/bg_tab1_contents1.jpg) no-repeat; }
+      background: url(/static/dungeon-map/public/img/bg_tab1_contents1.jpg) no-repeat; }
   .tab-contents.tab1-section2 {
     height: 851px; }
     .tab-contents.tab1-section2:before {
-      background: url(/public/img/bg_before_t1s2.jpg) no-repeat; }
+      background: url(/static/dungeon-map/public/img/bg_before_t1s2.jpg) no-repeat; }
     .tab-contents.tab1-section2:after {
-      background: url(/public/img/bg_after_t1s2.jpg) no-repeat; }
+      background: url(/static/dungeon-map/public/img/bg_after_t1s2.jpg) no-repeat; }
     .tab-contents.tab1-section2 .inner {
-      background: url(/public/img/bg_tab1_contents2.jpg) no-repeat; }
+      background: url(/static/dungeon-map/public/img/bg_tab1_contents2.jpg) no-repeat; }
     .tab-contents.tab1-section2 .btn {
       position: absolute;
       text-indent: -119988px;
@@ -439,7 +439,7 @@ button {
     color: #fff;
     text-align: center;
     letter-spacing: -0.75px;
-    background: url(/public/img/bg_tribes_gradient.jpg) 50% 0 no-repeat;
+    background: url(/static/dungeon-map/public/img/bg_tribes_gradient.jpg) 50% 0 no-repeat;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     .tab-contents.tab2-section-tribes .message {
@@ -541,7 +541,7 @@ button {
       position: relative;
       border-radius: 6px;
       height: 1037px;
-      background: url(/public/img/bg_map_dungeons.jpg) no-repeat; }
+      background: url(/static/dungeon-map/public/img/bg_map_dungeons.jpg) no-repeat; }
       .tab-contents.tab2-section-dungeons .dungeons.level-grade2 .dungeons__spot-list .btn-marker {
         background-position: 0 -50px; }
       .tab-contents.tab2-section-dungeons .dungeons.level-grade3 .dungeons__spot-list .btn-marker {
@@ -716,7 +716,7 @@ button {
           z-index: 10;
           width: 26px;
           height: 26px;
-          background: url(/public/img/sp_pointer.png) no-repeat; }
+          background: url(/static/dungeon-map/public/img/sp_pointer.png) no-repeat; }
         .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon .tooltip {
           position: relative;
           top: 0;
@@ -823,7 +823,7 @@ button {
               display: inline-block;
               width: 20px;
               height: 26px;
-              background: url(/public/img/sp_pointer.png) no-repeat 0 -350px; }
+              background: url(/static/dungeon-map/public/img/sp_pointer.png) no-repeat 0 -350px; }
   .tab-contents .list-reward {
     width: 1200px; }
     .tab-contents .list-reward:after {
@@ -961,7 +961,7 @@ button {
     position: relative;
     padding: 30px 0 0 30px;
     height: 127px;
-    background: url(/public/img/bg_apply_levelup.png) no-repeat;
+    background: url(/static/dungeon-map/public/img/bg_apply_levelup.png) no-repeat;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     .apply-levelup dd .btn-apply-levelup {
@@ -970,13 +970,13 @@ button {
       height: 60px;
       line-height: 0;
       font-size: 0;
-      background: url(/public/img/btn_apply_levelup.png) no-repeat; }
+      background: url(/static/dungeon-map/public/img/btn_apply_levelup.png) no-repeat; }
     .apply-levelup dd .txt-complete-levelup {
       width: 292px;
       height: 60px;
       line-height: 0;
       font-size: 0;
-      background: url(/public/img/txt_complete_levelup.png) 0 50% no-repeat; }
+      background: url(/static/dungeon-map/public/img/txt_complete_levelup.png) 0 50% no-repeat; }
     .apply-levelup dd .order-mission {
       text-indent: -119988px;
       overflow: hidden;
@@ -988,7 +988,7 @@ button {
   margin: 20px auto;
   width: 1200px;
   height: 156px;
-  background: url(/public/img/bg_shortcut_area.png) no-repeat;
+  background: url(/static/dungeon-map/public/img/bg_shortcut_area.png) no-repeat;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
@@ -1046,7 +1046,7 @@ button {
       text-transform: capitalize;
       width: 648px;
       height: 722px;
-      background: url(/public/img/bg_layer_detail_gift.png) no-repeat; }
+      background: url(/static/dungeon-map/public/img/bg_layer_detail_gift.png) no-repeat; }
       .wrap-layer .layer.detail-gift .btn-close {
         top: 49px;
         right: 42px; }
@@ -1059,7 +1059,7 @@ button {
       .wrap-layer .layer.awaken .btn-close {
         top: 20px;
         right: 20px;
-        background: url(/public/img/btn_close_layer.png) 50% 50% no-repeat; }
+        background: url(/static/dungeon-map/public/img/btn_close_layer.png) 50% 50% no-repeat; }
     .wrap-layer .layer .btn-close {
       text-indent: -119988px;
       overflow: hidden;
