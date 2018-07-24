@@ -631,19 +631,22 @@ button {
         .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon.reverse .tooltip {
           position: absolute;
           top: auto;
-          right: 80px;
-          bottom: 8px;
+          right: 83px;
+          bottom: 10px;
           left: auto;
-          min-width: 100px; }
+          min-width: 140px; }
           .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon.reverse .tooltip:before {
             top: auto;
-            bottom: -14px;
-            right: 2px;
+            bottom: -10px;
+            right: 4px;
             left: auto;
             border-top: 10px solid #fff;
-            border-right: 7px solid transparent; }
+            border-right: 0;
+            border-bottom: 0;
+            border-left: 10px solid transparent; }
         .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon.active .tooltip {
-          opacity: 1; }
+          opacity: 1;
+          z-index: 20; }
         .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon.active .btn-marker {
           -webkit-animation-name: effect-wobble-vertical;
                   animation-name: effect-wobble-vertical;
@@ -721,7 +724,7 @@ button {
           position: relative;
           top: 0;
           left: 36px;
-          z-index: 20;
+          z-index: 0;
           border-radius: 2px;
           padding: 4px 10px;
           line-height: 18px;
@@ -731,9 +734,9 @@ button {
           -webkit-box-shadow: rgba(0, 0, 0, 0.5) -3px 3px 10px;
                   box-shadow: rgba(0, 0, 0, 0.5) -3px 3px 10px;
           opacity: 0;
-          -webkit-transition: opacity 500ms 200ms ease;
-          -o-transition: opacity 500ms 200ms ease;
-          transition: opacity 500ms 200ms ease; }
+          -webkit-transition: all 500ms 200ms ease;
+          -o-transition: all 500ms 200ms ease;
+          transition: all 500ms 200ms ease; }
           .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon .tooltip:before {
             content: '';
             position: absolute;
@@ -749,13 +752,16 @@ button {
           display: inline;
           vertical-align: top; }
         .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon__level {
-          display: inline-block;
+          display: inline;
           vertical-align: top;
           font-size: 11px;
-          color: #666; }
+          color: #666;
+          word-break: break-all; }
           .tab-contents.tab2-section-dungeons .dungeons__spot-list .dungeon__level:before {
             content: '';
             display: inline-block;
+            position: relative;
+            top: -2px;
             margin: 0 4px;
             width: 1px;
             height: 8px;
