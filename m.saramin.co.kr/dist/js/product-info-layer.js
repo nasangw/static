@@ -8,66 +8,66 @@
 
     var inqueryText = ''
         +'<div class="discount_with_pcproduct" data-title="logo_default">'
-        +'<p>PC »óÇ°°ú °áÇÕ ±¸¸Å ½Ã ÇÒÀÎ! ÀÚ¼¼ÇÑ °ßÀûÀº °í°´¼¾ÅÍ·Î ¹®ÀÇÇÏ¼¼¿ä</p>'
+        +'<p>PC ìƒí’ˆê³¼ ê²°í•© êµ¬ë§¤ ì‹œ í• ì¸! ìžì„¸í•œ ê²¬ì ì€ ê³ ê°ì„¼í„°ë¡œ ë¬¸ì˜í•˜ì„¸ìš”</p>'
         +'</div>';
 
 
     if (contact.consultant_email != '' || contact.consultant_tel != '') {
         inqueryText = ''
         +'<div class="discount_with_pcproduct" data-title="logo_matching">'
-        +'<p>PC »óÇ°°ú °áÇÕ ±¸¸Å ½Ã ÇÒÀÎ! ÀÚ¼¼ÇÑ °ßÀûÀº VIP¸Å´ÏÀú¿¡°Ô ¹®ÀÇÇÏ¼¼¿ä</p>'
+        +'<p>PC ìƒí’ˆê³¼ ê²°í•© êµ¬ë§¤ ì‹œ í• ì¸! ìžì„¸í•œ ê²¬ì ì€ VIPë§¤ë‹ˆì €ì—ê²Œ ë¬¸ì˜í•˜ì„¸ìš”</p>'
         +'</div>';
     }
 
     var realtimeText = ''
         +'<div class="discount_with_pcproduct" data-title="realtime_default">'
-        +'<p>PC »óÇ°°ú °áÇÕ ±¸¸Å ½Ã 50% ÇÒÀÎ!</p>'
+        +'<p>PC ìƒí’ˆê³¼ ê²°í•© êµ¬ë§¤ ì‹œ 50% í• ì¸!</p>'
         +'</div>';
 
-    var applyMethod = "ÀüÈ­ »ó´ã ÈÄ ±¸¸Å °¡´É";
-    var applyMethodRealtime = "PC À¥(www.saramin.co.kr)¿¡ Á¢¼ÓÇÏ¿© °ø°í µî·Ï ÈÄ ±¸¸Å °¡´É"; // ½Ç½Ã°£ ³ëÃâ »óÇ°¿¡ ´ëÇÑ ½ÅÃ»¹æ¹ý
+    var applyMethod = "ì „í™” ìƒë‹´ í›„ êµ¬ë§¤ ê°€ëŠ¥";
+    var applyMethodRealtime = "PC ì›¹(www.saramin.co.kr)ì— ì ‘ì†í•˜ì—¬ ê³µê³  ë“±ë¡ í›„ êµ¬ë§¤ ê°€ëŠ¥"; // ì‹¤ì‹œê°„ ë…¸ì¶œ ìƒí’ˆì— ëŒ€í•œ ì‹ ì²­ë°©ë²•
 
     var article = '<article id="{{element_id}}" class="layer_product_detail">{{infoprd_layer}}</article>';
     var itemTemplete = ''
                 //+'<article id="{{element_id}}" class="layer_product_detail">'
             + '    <div class="infoprd_layer">'
-            + '        <h1 class="tit_header">»óÇ°¾È³»</h1>'
-            + '        <button type="button" class="btn_close_layer">»óÇ°¾È³» ´Ý±â</button>'
+            + '        <h1 class="tit_header">ìƒí’ˆì•ˆë‚´</h1>'
+            + '        <button type="button" class="btn_close_layer">ìƒí’ˆì•ˆë‚´ ë‹«ê¸°</button>'
             + '        <div class="prd_cate">'
             + '            <h2 class="product_name">{{name}}</h2>'
             + '            <p class="price"><span class="point">{{price}}</span>{{unit}}</p>'
             + '        </div>'
             + '        <div class="about_prd">'
-            + '            <h3 class="tit_depth2">»óÇ° Æ¯Â¡</h3>'
+            + '            <h3 class="tit_depth2">ìƒí’ˆ íŠ¹ì§•</h3>'
             + '            <ul class="about_list">{{about1}}</ul>'
-                //+'                <li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö »ó´Ü <span class="point">ÇÃ·¡Æ¼³Ñ M</span> ¿µ¿ª ³ëÃâ</li>'
-                //+'                <li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>'
+                //+'                <li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ ìƒë‹¨ <span class="point">í”Œëž˜í‹°ë„˜ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                //+'                <li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>'
                 //+'            </ul>'
-            + '            <h3 class="tit_depth2">Ãß°¡ ³ëÃâ À§Ä¡</h3>'
+            + '            <h3 class="tit_depth2">ì¶”ê°€ ë…¸ì¶œ ìœ„ì¹˜</h3>'
             + '            <ul class="about_list">{{about2}}</ul>'
-                //+'                <li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">ÇÁ¸®¹Ì¾ö ÇÃ·¯½º M</span>À¸·Î ³ëÃâ</li>'
-                //+'                <li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 12È¸ M</span> Àû¿ë</li>'
-                //+'                <li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">È¿°úÆÐÅ°Áö(ÄÃ·¯) M</span> Àû¿ë</li>'
-                //+'                <li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                //+'                <li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í”„ë¦¬ë¯¸ì—„ í”ŒëŸ¬ìŠ¤ M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                //+'                <li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 12íšŒ M</span> ì ìš©</li>'
+                //+'                <li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">íš¨ê³¼íŒ¨í‚¤ì§€(ì»¬ëŸ¬) M</span> ì ìš©</li>'
+                //+'                <li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
                 //+'            </ul>'
             + '        </div>'
             + '{{realtime_text}}'
-            //    // [Dev]·Î°í »óÇ° > ¿µ¾÷»ç¿ø ¸ÅÄªµÈ °æ¿ì
+            //    // [Dev]ë¡œê³  ìƒí’ˆ > ì˜ì—…ì‚¬ì› ë§¤ì¹­ëœ ê²½ìš°
             //+ '        <div class="discount_with_pcproduct" data-title="logo_matching" style="display: none;">'
-            //+ '          <p>PC »óÇ°°ú °áÇÕ ±¸¸Å ½Ã ÇÒÀÎ! ÀÚ¼¼ÇÑ °ßÀûÀº VIP¸Å´ÏÀú¿¡°Ô ¹®ÀÇÇÏ¼¼¿ä</p>'
+            //+ '          <p>PC ìƒí’ˆê³¼ ê²°í•© êµ¬ë§¤ ì‹œ í• ì¸! ìžì„¸í•œ ê²¬ì ì€ VIPë§¤ë‹ˆì €ì—ê²Œ ë¬¸ì˜í•˜ì„¸ìš”</p>'
             //+ '        </div>'
-            //    // [Dev]½Ç½Ã°£ ³ëÃâ »óÇ°ÀÏ °æ¿ì
+            //    // [Dev]ì‹¤ì‹œê°„ ë…¸ì¶œ ìƒí’ˆì¼ ê²½ìš°
             //+ '        <div class="discount_with_pcproduct" data-title="realtime_default" style="display: none;">'
-            //+ '            <p>PC »óÇ°°ú °áÇÕ ±¸¸Å ½Ã 50% ÇÒÀÎ!</p>'
+            //+ '            <p>PC ìƒí’ˆê³¼ ê²°í•© êµ¬ë§¤ ì‹œ 50% í• ì¸!</p>'
             //+ '        </div>'
             + '        <div class="bottom_desc">'
             + '            <dl class="apply_method">'
-            + '                <dt>½ÅÃ»¹æ¹ý</dt>'
+            + '                <dt>ì‹ ì²­ë°©ë²•</dt>'
             + '                <dd>{{apply_method}}</dd>'
             + '            </dl>'
             + '        <div class="wrap_button">'
             + '            <a href="tel:' + contact.phone.replace('-', '') + '" class="cellphone">' + contact.phone + '></a>'
-            + '            <a href="' + contact.link + '" class="email">E-mail¹®ÀÇ</a>'
+            + '            <a href="' + contact.link + '" class="email">E-mailë¬¸ì˜</a>'
             + '        </div>'
             + '        </div>'
             + '    </div>'
@@ -83,7 +83,7 @@
 
         $.each(description[prodId], function(key, data) {
 
-            unit = data.unit === 'day' ? '¿ø/ÀÏ' : '¿ø/ÁÖ';
+            unit = data.unit === 'day' ? 'ì›/ì¼' : 'ì›/ì£¼';
 
             temp = itemTemplete;
             temp = temp.replace('{{name}}', data.name);
@@ -107,11 +107,11 @@
         wrap.html(layer);
     }
 
-    function readProductDesc() { // »óÇ° »ó¼¼¼³¸í ·¹ÀÌ¾î ¿­°í ´Ý±â
+    function readProductDesc() { // ìƒí’ˆ ìƒì„¸ì„¤ëª… ë ˆì´ì–´ ì—´ê³  ë‹«ê¸°
 
         //if (!document.getElementById("productDesc")) {
         //    return;
-        //} // '»óÇ° »ó¼¼¼³¸í'ÀÌ ¾ø´Ù¸é ½ÇÇà ÁßÁö
+        //} // 'ìƒí’ˆ ìƒì„¸ì„¤ëª…'ì´ ì—†ë‹¤ë©´ ì‹¤í–‰ ì¤‘ì§€
 
         var flag = false,
             wrapProduct = $('<section id="productDesc"></section>'),
@@ -123,10 +123,10 @@
             //btnCloseLayer = $("#productDesc .btn_close_layer"),
             openedProduct = null;
 
-        bodyElement.append(wrapProduct).append(dimdElement); // bodyÀÇ ÀÚ½Ä³ëµå·Î ÀÌµ¿
+        bodyElement.append(wrapProduct).append(dimdElement); // bodyì˜ ìžì‹ë…¸ë“œë¡œ ì´ë™
         dimdElement.hide();
 
-        // '»óÇ°¾È³» »ó¼¼º¸±â'¹öÆ° ÀÌº¥Æ® ½ÃÀÛ
+        // 'ìƒí’ˆì•ˆë‚´ ìƒì„¸ë³´ê¸°'ë²„íŠ¼ ì´ë²¤íŠ¸ ì‹œìž‘
 
         btnDetailPopup.add(btnDetailPopup2).bind("click", function (ev) {
 
@@ -160,8 +160,8 @@
 
             if (scrollContents.length > 1) {
                 var idxProduct = 0,
-                    btnPrev = $('<button type="button" class="btn_product_prev">ÀÌÀü »óÇ°</button>'),
-                    btnNext = $('<button type="button" class="btn_product_next">´ÙÀ½ »óÇ°</button>');
+                    btnPrev = $('<button type="button" class="btn_product_prev">ì´ì „ ìƒí’ˆ</button>'),
+                    btnNext = $('<button type="button" class="btn_product_next">ë‹¤ìŒ ìƒí’ˆ</button>');
 
                 targetInner.hide();
                 targetInner.eq(idxProduct).show();
@@ -218,387 +218,387 @@
                 if (btnPrev) {
                     btnPrev.add(btnNext).remove();
                 }
-                $("#dimdModal").add($(openedTarget).find(".infoprd_layer").eq(0)).unbind("touchmove"); // ½ºÅ©·Ñ Àá±Ý ÇØÁ¦
+                $("#dimdModal").add($(openedTarget).find(".infoprd_layer").eq(0)).unbind("touchmove"); // ìŠ¤í¬ë¡¤ ìž ê¸ˆ í•´ì œ
             });
 
             event.preventDefault();
         });
-        // '»óÇ°¾È³» »ó¼¼º¸±â'¹öÆ° ÀÌº¥Æ® ³¡
+        // 'ìƒí’ˆì•ˆë‚´ ìƒì„¸ë³´ê¸°'ë²„íŠ¼ ì´ë²¤íŠ¸ ë
     }
 
     var description = {
         productDescPlatinum: [
             {
-                name: 'ÇÃ·¡Æ¼³Ñ M',
+                name: 'í”Œëž˜í‹°ë„˜ M',
                 price: '2,600,000',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö »ó´Ü <span class="point">ÇÃ·¡Æ¼³Ñ M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">ÇÁ¸®¹Ì¾ö ÇÃ·¯½º M</span>À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 12È¸ M</span> Àû¿ë</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">È¿°úÆÐÅ°Áö(ÄÃ·¯) M</span> Àû¿ë</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ ìƒë‹¨ <span class="point">í”Œëž˜í‹°ë„˜ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í”„ë¦¬ë¯¸ì—„ í”ŒëŸ¬ìŠ¤ M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 12íšŒ M</span> ì ìš©</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">íš¨ê³¼íŒ¨í‚¤ì§€(ì»¬ëŸ¬) M</span> ì ìš©</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             }
         ],
         productDescSpecialGold: [
             {
-                name: '½ºÆä¼È °ñµå M',
+                name: 'ìŠ¤íŽ˜ì…œ ê³¨ë“œ M',
                 price: '1,650,000',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö »ó´Ü <span class="point">½ºÆä¼È °ñµå M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>¿Í °í±Þ½º·¯¿î <span class="point">¹è°æ ÄÃ·¯</span>·Î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">ÇÁ¸®¹Ì¾ö ¾ËÆÄ M</span> À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 12È¸ M</span> Àû¿ë</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">È¿°úÆÐÅ°Áö(ÄÃ·¯) M</span> Àû¿ë</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ ìƒë‹¨ <span class="point">ìŠ¤íŽ˜ì…œ ê³¨ë“œ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ì™€ ê³ ê¸‰ìŠ¤ëŸ¬ìš´ <span class="point">ë°°ê²½ ì»¬ëŸ¬</span>ë¡œ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í”„ë¦¬ë¯¸ì—„ ì•ŒíŒŒ M</span> ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 12íšŒ M</span> ì ìš©</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">íš¨ê³¼íŒ¨í‚¤ì§€(ì»¬ëŸ¬) M</span> ì ìš©</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             }
         ],
         productDescSpecialPlus: [
             {
-                name: '½ºÆä¼È ÇÃ·¯½º M',
+                name: 'ìŠ¤íŽ˜ì…œ í”ŒëŸ¬ìŠ¤ M',
                 price: '1,265,000',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö »ó´Ü <span class="point">½ºÆä¼È ÇÃ·¯½º M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>¿Í °í±Þ½º·¯¿î <span class="point">¹è°æ ÄÃ·¯</span>·Î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">ÇÁ¸®¹Ì¾ö ¾ËÆÄ M</span>À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 6È¸ M</span> Àû¿ë</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">È¿°úÆÐÅ°Áö(ÄÃ·¯) M</span> Àû¿ë</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ ìƒë‹¨ <span class="point">ìŠ¤íŽ˜ì…œ í”ŒëŸ¬ìŠ¤ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ì™€ ê³ ê¸‰ìŠ¤ëŸ¬ìš´ <span class="point">ë°°ê²½ ì»¬ëŸ¬</span>ë¡œ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í”„ë¦¬ë¯¸ì—„ ì•ŒíŒŒ M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 6íšŒ M</span> ì ìš©</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">íš¨ê³¼íŒ¨í‚¤ì§€(ì»¬ëŸ¬) M</span> ì ìš©</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             }
         ],
         productDescSpecial: [
             {
-                name: '½ºÆä¼È M',
+                name: 'ìŠ¤íŽ˜ì…œ M',
                 price: '990,000',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö »ó´Ü <span class="point">½ºÆä¼È M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ ³ëÃâµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">ÇÁ¸®¹Ì¾ö M</span>À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 6È¸ M</span> Àû¿ë</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ ìƒë‹¨ <span class="point">ìŠ¤íŽ˜ì…œ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ë…¸ì¶œë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í”„ë¦¬ë¯¸ì—„ M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 6íšŒ M</span> ì ìš©</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             }
         ],
         productDescEutteumFixed: [
             {
-                name: 'À¸¶ä ÇÃ·¯½º M',
+                name: 'ìœ¼ëœ¸ í”ŒëŸ¬ìŠ¤ M',
                 price: '770,000',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö »ó´Ü <span class="point">À¸¶ä ÇÃ·¯½º M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>¿Í °í±Þ½º·¯¿î <span class="point">¹è°æ ÄÃ·¯</span>·Î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">Æ÷Ä¿½º ÇÃ·¯½º M</span>À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 6È¸ M</span> Àû¿ë</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ ìƒë‹¨ <span class="point">ìœ¼ëœ¸ í”ŒëŸ¬ìŠ¤ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ì™€ ê³ ê¸‰ìŠ¤ëŸ¬ìš´ <span class="point">ë°°ê²½ ì»¬ëŸ¬</span>ë¡œ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í¬ì»¤ìŠ¤ í”ŒëŸ¬ìŠ¤ M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 6íšŒ M</span> ì ìš©</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             }
         ],
         productDescEutteum: [
             {
-                name: 'À¸¶ä M',
+                name: 'ìœ¼ëœ¸ M',
                 price: '660,000',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö »ó´Ü <span class="point">À¸¶ä M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">Æ÷Ä¿½º ÇÃ·¯½º M</span>À¸·Î ³ëÃâ </li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 6È¸ M</span> Àû¿ë</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ ìƒë‹¨ <span class="point">ìœ¼ëœ¸ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í¬ì»¤ìŠ¤ í”ŒëŸ¬ìŠ¤ M</span>ìœ¼ë¡œ ë…¸ì¶œ </li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 6íšŒ M</span> ì ìš©</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             },
             {
-                name: '½Ç½Ã°£ À¸¶ä M',
+                name: 'ì‹¤ì‹œê°„ ìœ¼ëœ¸ M',
                 price: '100,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö »ó´Ü <span class="point">À¸¶ä M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">Æ÷Ä¿½º M</span>À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 3È¸ M</span> Àû¿ë</li>'
-                + '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ ìƒë‹¨ <span class="point">ìœ¼ëœ¸ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í¬ì»¤ìŠ¤ M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 3íšŒ M</span> ì ìš©</li>'
+                + '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
 
         ],
         productDescAljjaFixed: [
             {
-                name: '¾ËÂ¥ ÇÃ·¯½º M',
+                name: 'ì•Œì§œ í”ŒëŸ¬ìŠ¤ M',
                 price: '495,000',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö »ó´Ü <span class="point">¾ËÂ¥ ÇÃ·¯½º M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>¿Í °í±Þ½º·¯¿î <span class="point">¹è°æ ÄÃ·¯</span>·Î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">PLUS M</span>À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 6È¸ M</span> Àû¿ë</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ ìƒë‹¨ <span class="point">ì•Œì§œ í”ŒëŸ¬ìŠ¤ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ì™€ ê³ ê¸‰ìŠ¤ëŸ¬ìš´ <span class="point">ë°°ê²½ ì»¬ëŸ¬</span>ë¡œ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">PLUS M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 6íšŒ M</span> ì ìš©</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             }
         ],
         productDescAljja: [
             {
-                name: '¾ËÂ¥ M',
+                name: 'ì•Œì§œ M',
                 price: '385,000',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö »ó´Ü <span class="point">¾ËÂ¥ M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">PLUS M</span>À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 6È¸ M</span> Àû¿ë</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ ìƒë‹¨ <span class="point">ì•Œì§œ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">PLUS M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 6íšŒ M</span> ì ìš©</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             },
             {
-                name: '½Ç½Ã°£ ¾ËÂ¥ M',
+                name: 'ì‹¤ì‹œê°„ ì•Œì§œ M',
                 price: '55,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö »ó´Ü <span class="point">¾ËÂ¥ M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">TOP M</span>À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 3È¸ M</span> Àû¿ë</li>'
-                + '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ ìƒë‹¨ <span class="point">ì•Œì§œ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">TOP M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 3íšŒ M</span> ì ìš©</li>'
+                + '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescNarae: [
             {
-                name: '³ª·¡ M',
+                name: 'ë‚˜ëž˜ M',
                 price: '346,500',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö ÇÏ´Ü <span class="point">³ª·¡ M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">PLUS M</span>À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 6È¸ M</span> Àû¿ë</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ í•˜ë‹¨ <span class="point">ë‚˜ëž˜ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">PLUS M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 6íšŒ M</span> ì ìš©</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             },
             {
-                name: '½Ç½Ã°£ ³ª·¡ M',
+                name: 'ì‹¤ì‹œê°„ ë‚˜ëž˜ M',
                 price: '50,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö ÇÏ´Ü <span class="point">³ª·¡ M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">PLUS M</span>À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 3È¸ M</span> Àû¿ë</li>'
-                + '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ í•˜ë‹¨ <span class="point">ë‚˜ëž˜ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">PLUS M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 3íšŒ M</span> ì ìš©</li>'
+                + '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescHeadlinePrime: [
             {
-                name: 'Çìµå¶óÀÎ ÇÁ¶óÀÓ M',
+                name: 'í—¤ë“œë¼ì¸ í”„ë¼ìž„ M',
                 price: '495,000',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ ÀüÃ¼ Ã¤¿ëÁ¤º¸ ¸ÞÀÎ »ó´Ü<br /><span class="point">Çìµå¶óÀÎ M</span> ¿µ¿ª ¿ì¼± ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>¿Í °í±Þ½º·¯¿î <span class="point">¹è°æ ÄÃ·¯</span>·Î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">ÇÁ¸®¹Ì¾ö M</span>À¸·Î ³ëÃâ</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì „ì²´ ì±„ìš©ì •ë³´ ë©”ì¸ ìƒë‹¨<br /><span class="point">í—¤ë“œë¼ì¸ M</span> ì˜ì—­ ìš°ì„  ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ì™€ ê³ ê¸‰ìŠ¤ëŸ¬ìš´ <span class="point">ë°°ê²½ ì»¬ëŸ¬</span>ë¡œ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í”„ë¦¬ë¯¸ì—„ M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             }
         ],
         productDescHeadline: [
             {
-                name: 'Çìµå¶óÀÎ M',
+                name: 'í—¤ë“œë¼ì¸ M',
                 price: '385,000',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ ÀüÃ¼ Ã¤¿ëÁ¤º¸ ¸ÞÀÎ »ó´Ü<br /><span class="point">Çìµå¶óÀÎ M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>¿Í °í±Þ½º·¯¿î <span class="point">¹è°æ ÄÃ·¯</span>·Î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">ÇÁ¸®¹Ì¾ö M</span>À¸·Î ³ëÃâ</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì „ì²´ ì±„ìš©ì •ë³´ ë©”ì¸ ìƒë‹¨<br /><span class="point">í—¤ë“œë¼ì¸ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ì™€ ê³ ê¸‰ìŠ¤ëŸ¬ìš´ <span class="point">ë°°ê²½ ì»¬ëŸ¬</span>ë¡œ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í”„ë¦¬ë¯¸ì—„ M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             }
         ],
         productDescNuri: [
             {
-                name: '´©¸® M',
+                name: 'ëˆ„ë¦¬ M',
                 price: '275,000',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ ÀüÃ¼ Ã¤¿ëÁ¤º¸ ¸ÞÀÎ »ó´Ü<br /> <span class="point">´©¸® M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">Æ÷Ä¿½º M</span>À¸·Î ³ëÃâ</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì „ì²´ ì±„ìš©ì •ë³´ ë©”ì¸ ìƒë‹¨<br /> <span class="point">ëˆ„ë¦¬ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í¬ì»¤ìŠ¤ M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             }
         ],
         productDescGaram: [
             {
-                name: '°¡¶÷ M',
+                name: 'ê°€ëžŒ M',
                 price: '247,500',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ ÀüÃ¼ Ã¤¿ëÁ¤º¸ ¸ÞÀÎ »ó´Ü<br /> <span class="point">°¡¶÷ M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">Æ÷Ä¿½º M</span>À¸·Î ³ëÃâ</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì „ì²´ ì±„ìš©ì •ë³´ ë©”ì¸ ìƒë‹¨<br /> <span class="point">ê°€ëžŒ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í¬ì»¤ìŠ¤ M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             }
         ],
         productDescGaon: [
             {
-                name: '°¡¿Â M',
+                name: 'ê°€ì˜¨ M',
                 price: '231,000',
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ ÀüÃ¼ Ã¤¿ëÁ¤º¸ ¸ÞÀÎ »ó´Ü <br /><span class="point">°¡¿Â M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">Æ÷Ä¿½º M</span>À¸·Î ³ëÃâ</li>'
-                + '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì „ì²´ ì±„ìš©ì •ë³´ ë©”ì¸ ìƒë‹¨ <br /><span class="point">ê°€ì˜¨ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í¬ì»¤ìŠ¤ M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             }
         ],
         productDescBestRecruit: [
             {
-                name: 'BEST °øÃ¤¼Óº¸ M',
+                name: 'BEST ê³µì±„ì†ë³´ M',
                 price: '1,155,000',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ °øÃ¤ÀÇ ¸í°¡ »ó´Ü<br /> <span class="point">BEST °øÃ¤¼Óº¸ M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>¿Í °í±Þ½º·¯¿î <span class="point">¹è°æ ÄÃ·¯</span>·Î ÁÖ¸ñµµ ³ôÀ½</li>'
-                + '<li class="attention">¡Ø º» »óÇ°Àº ´ë±â¾÷(¸ÅÃâ 1000´ë, »óÀå±â¾÷, °ø±â¾÷ µî)À» À§ÇÑ »óÇ°À¸·Î, ÀÏºÎ ±â¾÷¿¡ ÆÇ¸Å°¡ Á¦ÇÑµÉ ¼ö ÀÖ½À´Ï´Ù.</li>',
-                about2: '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ê³µì±„ì˜ ëª…ê°€ ìƒë‹¨<br /> <span class="point">BEST ê³µì±„ì†ë³´ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ì™€ ê³ ê¸‰ìŠ¤ëŸ¬ìš´ <span class="point">ë°°ê²½ ì»¬ëŸ¬</span>ë¡œ ì£¼ëª©ë„ ë†’ìŒ</li>'
+                + '<li class="attention">â€» ë³¸ ìƒí’ˆì€ ëŒ€ê¸°ì—…(ë§¤ì¶œ 1000ëŒ€, ìƒìž¥ê¸°ì—…, ê³µê¸°ì—… ë“±)ì„ ìœ„í•œ ìƒí’ˆìœ¼ë¡œ, ì¼ë¶€ ê¸°ì—…ì— íŒë§¤ê°€ ì œí•œë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</li>',
+                about2: '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             }
         ],
         productDescBestSpecialRecruit: [
             {
-                name: 'BEST Àü¹®¼Óº¸ M',
+                name: 'BEST ì „ë¬¸ì†ë³´ M',
                 price: '385,000',
                 realtime_fl: 0,
                 unit: 'week',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ ÀüÃ¼Ã¤¿ë Ä«Å×°í¸® »ó´Ü <span class="point">BEST Àü¹®¼Óº¸ M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>¿Í °í±Þ½º·¯¿î <span class="point">¹è°æ ÄÃ·¯</span>·Î ÁÖ¸ñµµ ³ôÀ½</li>'
-                + '<li class="attention">¡Ø º» »óÇ°Àº Àü¹® ºÐ¾ß¿¡ Æ¯È­µÈ Ä«Å×°í¸®¿¡ ³ëÃâµÇ´Â »óÇ°À¸·Î °ø°í¿¡ ¸Â´Â Ä«Å×°í¸®°¡ ¾øÀ» °æ¿ì ÆÇ¸Å°¡ Á¦ÇÑµÉ ¼ö ÀÖ½À´Ï´Ù.</li>',
-                about2: '<li class="press_horizontally">Ãë¾÷ °ü·Ã Ä«Æä (´ÙÀ½, ³×ÀÌ¹ö µî) ¹× Ä¿¹Â´ÏÆ¼ (»Ë»Ñ µî), ¾ð·Ð»ç(¸Ó´ÏÅõµ¥ÀÌµî) Ãë¾÷ °ü·Ã °Ô½ÃÆÇ ¹× »ç¶÷ÀÎ Àü¹®¼Óº¸ µ¿½Ã³ëÃâ</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì „ì²´ì±„ìš© ì¹´í…Œê³ ë¦¬ ìƒë‹¨ <span class="point">BEST ì „ë¬¸ì†ë³´ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ì™€ ê³ ê¸‰ìŠ¤ëŸ¬ìš´ <span class="point">ë°°ê²½ ì»¬ëŸ¬</span>ë¡œ ì£¼ëª©ë„ ë†’ìŒ</li>'
+                + '<li class="attention">â€» ë³¸ ìƒí’ˆì€ ì „ë¬¸ ë¶„ì•¼ì— íŠ¹í™”ëœ ì¹´í…Œê³ ë¦¬ì— ë…¸ì¶œë˜ëŠ” ìƒí’ˆìœ¼ë¡œ ê³µê³ ì— ë§žëŠ” ì¹´í…Œê³ ë¦¬ê°€ ì—†ì„ ê²½ìš° íŒë§¤ê°€ ì œí•œë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</li>',
+                about2: '<li class="press_horizontally">ì·¨ì—… ê´€ë ¨ ì¹´íŽ˜ (ë‹¤ìŒ, ë„¤ì´ë²„ ë“±) ë° ì»¤ë®¤ë‹ˆí‹° (ë½ë¿Œ ë“±), ì–¸ë¡ ì‚¬(ë¨¸ë‹ˆíˆ¬ë°ì´ë“±) ì·¨ì—… ê´€ë ¨ ê²Œì‹œíŒ ë° ì‚¬ëžŒì¸ ì „ë¬¸ì†ë³´ ë™ì‹œë…¸ì¶œ</li>'
             }
         ],
         productDescRealEutteum: [
             {
-                name: '½Ç½Ã°£ À¸¶ä M',
+                name: 'ì‹¤ì‹œê°„ ìœ¼ëœ¸ M',
                 price: '100,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö »ó´Ü <span class="point">À¸¶ä M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">Æ÷Ä¿½º M</span>À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 3È¸ M</span> Àû¿ë</li>'
-                + '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ ìƒë‹¨ <span class="point">ìœ¼ëœ¸ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">í¬ì»¤ìŠ¤ M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 3íšŒ M</span> ì ìš©</li>'
+                + '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescRealAljja: [
             {
-                name: '½Ç½Ã°£ ¾ËÂ¥ M',
+                name: 'ì‹¤ì‹œê°„ ì•Œì§œ M',
                 price: '55,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö »ó´Ü <span class="point">¾ËÂ¥ M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">TOP M</span>À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 3È¸ M</span> Àû¿ë</li>'
-                + '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ ìƒë‹¨ <span class="point">ì•Œì§œ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">TOP M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 3íšŒ M</span> ì ìš©</li>'
+                + '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescRealNarae: [
             {
-                name: '½Ç½Ã°£ ³ª·¡ M',
+                name: 'ì‹¤ì‹œê°„ ë‚˜ëž˜ M',
                 price: '50,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Ã¹ ÆäÀÌÁö ÇÏ´Ü <span class="point">³ª·¡ M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>',
-                about2: '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª <span class="point">PLUS M</span>À¸·Î ³ëÃâ</li>'
-                + '<li>¸ð¹ÙÀÏ Á÷¾÷/»ê¾÷/Áö¿ª ¸®½ºÆ®¿¡ <span class="point">·©Å©¾÷ 3È¸ M</span> Àû¿ë</li>'
-                + '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì²« íŽ˜ì´ì§€ í•˜ë‹¨ <span class="point">ë‚˜ëž˜ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ <span class="point">PLUS M</span>ìœ¼ë¡œ ë…¸ì¶œ</li>'
+                + '<li>ëª¨ë°”ì¼ ì§ì—…/ì‚°ì—…/ì§€ì—­ ë¦¬ìŠ¤íŠ¸ì— <span class="point">ëž­í¬ì—… 3íšŒ M</span> ì ìš©</li>'
+                + '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescPremiumFix: [
             {
-                name: 'ÇÁ¸®¹Ì¾ö ÇÃ·¯½º M',
+                name: 'í”„ë¦¬ë¯¸ì—„ í”ŒëŸ¬ìŠ¤ M',
                 price: '60,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Á÷¾÷/»ê¾÷/Áö¿ª »ó´Ü<br><span class="point">ÇÁ¸®¹Ì¾ö M</span> ¿µ¿ª ¿ì¼± ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>¿Í <span class="point">¹è°æ ÄÃ·¯ Á¦°ø</span></li>'
-                + '<li>4ÀÏ ÀÌ»ó À¯·á ÀÌ¿ë ½Ã º¼µå, ·©Å©¾÷ ¼­ºñ½º Á¦°ø</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 2ÀÏ (120,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì§ì—…/ì‚°ì—…/ì§€ì—­ ìƒë‹¨<br><span class="point">í”„ë¦¬ë¯¸ì—„ M</span> ì˜ì—­ ìš°ì„  ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ì™€ <span class="point">ë°°ê²½ ì»¬ëŸ¬ ì œê³µ</span></li>'
+                + '<li>4ì¼ ì´ìƒ ìœ ë£Œ ì´ìš© ì‹œ ë³¼ë“œ, ëž­í¬ì—… ì„œë¹„ìŠ¤ ì œê³µ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 2ì¼ (120,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             },
             {
-                name: 'ÇÁ¸®¹Ì¾ö ¾ËÆÄ M',
+                name: 'í”„ë¦¬ë¯¸ì—„ ì•ŒíŒŒ M',
                 price: '35,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Á÷¾÷/»ê¾÷/Áö¿ª »ó´Ü <br><span class="point">ÇÁ¸®¹Ì¾ö M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>¿Í <span class="point">¹è°æ ÄÃ·¯</span>·Î ÁÖ¸ñµµ ³ôÀ½</li>'
-                + '<li>4ÀÏ ÀÌ»ó À¯·á ÀÌ¿ë ½Ã º¼µå, ·©Å©¾÷ ¼­ºñ½º Á¦°ø</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 2ÀÏ (70,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì§ì—…/ì‚°ì—…/ì§€ì—­ ìƒë‹¨ <br><span class="point">í”„ë¦¬ë¯¸ì—„ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ì™€ <span class="point">ë°°ê²½ ì»¬ëŸ¬</span>ë¡œ ì£¼ëª©ë„ ë†’ìŒ</li>'
+                + '<li>4ì¼ ì´ìƒ ìœ ë£Œ ì´ìš© ì‹œ ë³¼ë“œ, ëž­í¬ì—… ì„œë¹„ìŠ¤ ì œê³µ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 2ì¼ (70,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             },
             {
-                name: 'ÇÁ¸®¹Ì¾ö M',
+                name: 'í”„ë¦¬ë¯¸ì—„ M',
                 price: '30,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Á÷¾÷/»ê¾÷/Áö¿ª »ó´Ü <br><span class="point">ÇÁ¸®¹Ì¾ö M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>'
-                + '<li>4ÀÏ ÀÌ»ó À¯·á ÀÌ¿ë ½Ã º¼µå, ·©Å©¾÷ ¼­ºñ½º Á¦°ø</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 2ÀÏ (60,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì§ì—…/ì‚°ì—…/ì§€ì—­ ìƒë‹¨ <br><span class="point">í”„ë¦¬ë¯¸ì—„ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>'
+                + '<li>4ì¼ ì´ìƒ ìœ ë£Œ ì´ìš© ì‹œ ë³¼ë“œ, ëž­í¬ì—… ì„œë¹„ìŠ¤ ì œê³µ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 2ì¼ (60,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescPremiumAlpha: [
             {
-                name: 'ÇÁ¸®¹Ì¾ö ¾ËÆÄ M',
+                name: 'í”„ë¦¬ë¯¸ì—„ ì•ŒíŒŒ M',
                 price: '35,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Á÷¾÷/»ê¾÷/Áö¿ª »ó´Ü <br><span class="point">ÇÁ¸®¹Ì¾ö M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>¿Í <span class="point">¹è°æ ÄÃ·¯</span>·Î ÁÖ¸ñµµ ³ôÀ½</li>'
-                + '<li>4ÀÏ ÀÌ»ó À¯·á ÀÌ¿ë ½Ã º¼µå, ·©Å©¾÷ ¼­ºñ½º Á¦°ø</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 2ÀÏ (70,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì§ì—…/ì‚°ì—…/ì§€ì—­ ìƒë‹¨ <br><span class="point">í”„ë¦¬ë¯¸ì—„ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ì™€ <span class="point">ë°°ê²½ ì»¬ëŸ¬</span>ë¡œ ì£¼ëª©ë„ ë†’ìŒ</li>'
+                + '<li>4ì¼ ì´ìƒ ìœ ë£Œ ì´ìš© ì‹œ ë³¼ë“œ, ëž­í¬ì—… ì„œë¹„ìŠ¤ ì œê³µ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 2ì¼ (70,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescPremium: [
             {
-                name: 'ÇÁ¸®¹Ì¾ö M',
+                name: 'í”„ë¦¬ë¯¸ì—„ M',
                 price: '30,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Á÷¾÷/»ê¾÷/Áö¿ª »ó´Ü <br><span class="point">ÇÁ¸®¹Ì¾ö M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>'
-                + '<li>4ÀÏ ÀÌ»ó À¯·á ÀÌ¿ë ½Ã º¼µå, ·©Å©¾÷ ¼­ºñ½º Á¦°ø</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 2ÀÏ (60,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì§ì—…/ì‚°ì—…/ì§€ì—­ ìƒë‹¨ <br><span class="point">í”„ë¦¬ë¯¸ì—„ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>'
+                + '<li>4ì¼ ì´ìƒ ìœ ë£Œ ì´ìš© ì‹œ ë³¼ë“œ, ëž­í¬ì—… ì„œë¹„ìŠ¤ ì œê³µ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 2ì¼ (60,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescFocusFix: [
             {
-                name: 'Æ÷Ä¿½º ÇÃ·¯½º M',
+                name: 'í¬ì»¤ìŠ¤ í”ŒëŸ¬ìŠ¤ M',
                 price: '25,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Á÷¾÷/»ê¾÷/Áö¿ª »ó´Ü <span class="point">Æ÷Ä¿½º ÇÃ·¯½º M</span> ¿µ¿ª ¿ì¼± ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>¿Í <span class="point">¹è°æ ÄÃ·¯ Á¦°ø</span></li>'
-                + '<li>4ÀÏ ÀÌ»ó À¯·á ÀÌ¿ë ½Ã º¼µå, ·©Å©¾÷ ¼­ºñ½º Á¦°ø</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 2ÀÏ (50,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì§ì—…/ì‚°ì—…/ì§€ì—­ ìƒë‹¨ <span class="point">í¬ì»¤ìŠ¤ í”ŒëŸ¬ìŠ¤ M</span> ì˜ì—­ ìš°ì„  ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ì™€ <span class="point">ë°°ê²½ ì»¬ëŸ¬ ì œê³µ</span></li>'
+                + '<li>4ì¼ ì´ìƒ ìœ ë£Œ ì´ìš© ì‹œ ë³¼ë“œ, ëž­í¬ì—… ì„œë¹„ìŠ¤ ì œê³µ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 2ì¼ (50,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             },
             {
-                name: 'Æ÷Ä¿½º M',
+                name: 'í¬ì»¤ìŠ¤ M',
                 price: '22,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Á÷¾÷/»ê¾÷/Áö¿ª »ó´Ü <span class="point">Æ÷Ä¿½º M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>'
-                + '<li>4ÀÏ ÀÌ»ó À¯·á ÀÌ¿ë ½Ã º¼µå, ·©Å©¾÷ ¼­ºñ½º Á¦°ø</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 2ÀÏ (44,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì§ì—…/ì‚°ì—…/ì§€ì—­ ìƒë‹¨ <span class="point">í¬ì»¤ìŠ¤ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>'
+                + '<li>4ì¼ ì´ìƒ ìœ ë£Œ ì´ìš© ì‹œ ë³¼ë“œ, ëž­í¬ì—… ì„œë¹„ìŠ¤ ì œê³µ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 2ì¼ (44,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescFocus: [
             {
-                name: 'Æ÷Ä¿½º M',
+                name: 'í¬ì»¤ìŠ¤ M',
                 price: '22,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Á÷¾÷/»ê¾÷/Áö¿ª »ó´Ü <span class="point">Æ÷Ä¿½º M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li><span class="point">±â¾÷ ·Î°í</span>°¡ Á¦°øµÇ¾î ÁÖ¸ñµµ ³ôÀ½</li>'
-                + '<li>4ÀÏ ÀÌ»ó À¯·á ÀÌ¿ë ½Ã º¼µå, ·©Å©¾÷ ¼­ºñ½º Á¦°ø</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 2ÀÏ (44,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì§ì—…/ì‚°ì—…/ì§€ì—­ ìƒë‹¨ <span class="point">í¬ì»¤ìŠ¤ M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li><span class="point">ê¸°ì—… ë¡œê³ </span>ê°€ ì œê³µë˜ì–´ ì£¼ëª©ë„ ë†’ìŒ</li>'
+                + '<li>4ì¼ ì´ìƒ ìœ ë£Œ ì´ìš© ì‹œ ë³¼ë“œ, ëž­í¬ì—… ì„œë¹„ìŠ¤ ì œê³µ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 2ì¼ (44,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescTop: [
@@ -607,10 +607,10 @@
                 price: '17,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Á÷¾÷/»ê¾÷/Áö¿ª ÇÏ´Ü <span class="point">TOP M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li>4ÀÏ ÀÌ»ó À¯·á ÀÌ¿ë ½Ã º¼µå, ·©Å©¾÷ ¼­ºñ½º Á¦°ø</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 3ÀÏ (51,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì§ì—…/ì‚°ì—…/ì§€ì—­ í•˜ë‹¨ <span class="point">TOP M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li>4ì¼ ì´ìƒ ìœ ë£Œ ì´ìš© ì‹œ ë³¼ë“œ, ëž­í¬ì—… ì„œë¹„ìŠ¤ ì œê³µ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 3ì¼ (51,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescPlus: [
@@ -619,115 +619,115 @@
                 price: '11,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ »ç¶÷ÀÎ Á÷¾÷/»ê¾÷/Áö¿ª ÇÏ´Ü <span class="point">PLUS M</span> ¿µ¿ª ³ëÃâ</li>'
-                + '<li>4ÀÏ ÀÌ»ó À¯·á ÀÌ¿ë ½Ã º¼µå, ·©Å©¾÷ ¼­ºñ½º Á¦°ø</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 3ÀÏ (33,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì‚¬ëžŒì¸ ì§ì—…/ì‚°ì—…/ì§€ì—­ í•˜ë‹¨ <span class="point">PLUS M</span> ì˜ì—­ ë…¸ì¶œ</li>'
+                + '<li>4ì¼ ì´ìƒ ìœ ë£Œ ì´ìš© ì‹œ ë³¼ë“œ, ëž­í¬ì—… ì„œë¹„ìŠ¤ ì œê³µ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 3ì¼ (33,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescRankup3: [
             {
-                name: '·©Å©UP 3È¸ M',
+                name: 'ëž­í¬UP 3íšŒ M',
                 price: '10,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li><span class="point">8½Ã°£</span>¸¶´Ù ¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ® ÃÖ»ó´ÜÀ¸·Î ÀÚµ¿ Á¡ÇÁ</li>'
-                + '<li>±â¾÷¸í ¾Õ¿¡<span class="point">UP</span>¾ÆÀÌÄÜ Ç¥½Ã</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 3ÀÏ(30,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li><span class="point">8ì‹œê°„</span>ë§ˆë‹¤ ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ ìµœìƒë‹¨ìœ¼ë¡œ ìžë™ ì í”„</li>'
+                + '<li>ê¸°ì—…ëª… ì•žì—<span class="point">UP</span>ì•„ì´ì½˜ í‘œì‹œ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 3ì¼(30,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescRankup6: [
             {
-                name: '·©Å©UP 6È¸ M',
+                name: 'ëž­í¬UP 6íšŒ M',
                 price: '13,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li><span class="point">4½Ã°£</span>¸¶´Ù ¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ® ÃÖ»ó´ÜÀ¸·Î ÀÚµ¿ Á¡ÇÁ</li>'
-                + '<li>±â¾÷¸í ¾Õ¿¡<span class="point">UP</span>¾ÆÀÌÄÜ Ç¥½Ã</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 3ÀÏ(39,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li><span class="point">4ì‹œê°„</span>ë§ˆë‹¤ ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ ìµœìƒë‹¨ìœ¼ë¡œ ìžë™ ì í”„</li>'
+                + '<li>ê¸°ì—…ëª… ì•žì—<span class="point">UP</span>ì•„ì´ì½˜ í‘œì‹œ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 3ì¼(39,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescRankup12: [
             {
-                name: '·©Å©UP 12È¸ M',
+                name: 'ëž­í¬UP 12íšŒ M',
                 price: '20,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li><span class="point">2½Ã°£</span>¸¶´Ù ¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ® ÃÖ»ó´ÜÀ¸·Î ÀÚµ¿ Á¡ÇÁ</li>'
-                + '<li>±â¾÷¸í ¾Õ¿¡<span class="point">UP</span>¾ÆÀÌÄÜ Ç¥½Ã</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 3ÀÏ(60,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li><span class="point">2ì‹œê°„</span>ë§ˆë‹¤ ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ ìµœìƒë‹¨ìœ¼ë¡œ ìžë™ ì í”„</li>'
+                + '<li>ê¸°ì—…ëª… ì•žì—<span class="point">UP</span>ì•„ì´ì½˜ í‘œì‹œ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 3ì¼(60,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescBold: [
             {
-                name: 'º¼µå M',
+                name: 'ë³¼ë“œ M',
                 price: '6,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ±â¾÷¸í + °ø°íÁ¦¸ñ ±½°í ÁøÇÏ°Ô °­Á¶ Ç¥½Ã</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 3ÀÏ(18,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— ê¸°ì—…ëª… + ê³µê³ ì œëª© êµµê³  ì§„í•˜ê²Œ ê°•ì¡° í‘œì‹œ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 3ì¼(18,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescColor: [
             {
-                name: 'ÄÃ·¯ M',
+                name: 'ì»¬ëŸ¬ M',
                 price: '5,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ±â¾÷¸í + °ø°íÁ¦¸ñ °­·ÄÇÑ ÄÃ·¯·Î °­Á¶ Ç¥½Ã</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 3ÀÏ(15,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— ê¸°ì—…ëª… + ê³µê³ ì œëª© ê°•ë ¬í•œ ì»¬ëŸ¬ë¡œ ê°•ì¡° í‘œì‹œ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 3ì¼(15,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescAttention: [
             {
-                name: 'ÁÖ¸ñ M',
+                name: 'ì£¼ëª© M',
                 price: '4,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ±â¾÷¸í ¾Õ ´«¿¡ ¶ç´Â ¾ÆÀÌÄÜ Ç¥½Ã</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 3ÀÏ(12,000¿ø)</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— ê¸°ì—…ëª… ì•ž ëˆˆì— ë„ëŠ” ì•„ì´ì½˜ í‘œì‹œ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 3ì¼(12,000ì›)</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescEffectPacHighlighter: [
             {
-                name: 'È¿°úÆÐÅ°Áö(Çü±¤Ææ) M',
+                name: 'íš¨ê³¼íŒ¨í‚¤ì§€(í˜•ê´‘íŽœ) M',
                 price: '17,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ¾ÆÀÌÄÜ + º¼µå + Çü±¤Ææ + ÄÃ·¯·Î °­Á¶ Ç¥½Ã</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 3ÀÏ(51,000¿ø)</li>'
-                + '<li class="attention">¡Ø TOP M, PLUS M°ú ÇÔ²² ÀÌ¿ëÇÏ½Ã¸é ´õ¿í È¿°úÀûÀÔ´Ï´Ù.</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— ì•„ì´ì½˜ + ë³¼ë“œ + í˜•ê´‘íŽœ + ì»¬ëŸ¬ë¡œ ê°•ì¡° í‘œì‹œ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 3ì¼(51,000ì›)</li>'
+                + '<li class="attention">â€» TOP M, PLUS Mê³¼ í•¨ê»˜ ì´ìš©í•˜ì‹œë©´ ë”ìš± íš¨ê³¼ì ìž…ë‹ˆë‹¤.</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescEffectPacColor: [
             {
-                name: 'È¿°úÆÐÅ°Áö(ÄÃ·¯) M',
+                name: 'íš¨ê³¼íŒ¨í‚¤ì§€(ì»¬ëŸ¬) M',
                 price: '12,000',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ¾ÆÀÌÄÜ + º¼µå + ÄÃ·¯·Î °­Á¶ Ç¥½Ã</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 3ÀÏ(36,000¿ø)</li>'
-                + '<li class="attention">¡Ø TOP M, PLUS M°ú ÇÔ²² ÀÌ¿ëÇÏ½Ã¸é ´õ¿í È¿°úÀûÀÔ´Ï´Ù.</li>',
-                about2: '<li>¸ð¹ÙÀÏ ÀÏ¹Ý ¸®½ºÆ®¿¡ ÇÏÀÌ¶óÀÌÆ® È¿°ú Àû¿ë</li>'
+                about1: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— ì•„ì´ì½˜ + ë³¼ë“œ + ì»¬ëŸ¬ë¡œ ê°•ì¡° í‘œì‹œ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 3ì¼(36,000ì›)</li>'
+                + '<li class="attention">â€» TOP M, PLUS Mê³¼ í•¨ê»˜ ì´ìš©í•˜ì‹œë©´ ë”ìš± íš¨ê³¼ì ìž…ë‹ˆë‹¤.</li>',
+                about2: '<li>ëª¨ë°”ì¼ ì¼ë°˜ ë¦¬ìŠ¤íŠ¸ì— í•˜ì´ë¼ì´íŠ¸ íš¨ê³¼ ì ìš©</li>'
             }
         ],
         productDescSearchKeyword: [
             {
-                name: '°Ë»ö Å°¿öµå M',
+                name: 'ê²€ìƒ‰ í‚¤ì›Œë“œ M',
                 price: '1,650',
                 realtime_fl: 1,
                 unit: 'day',
-                about1: '<li>Å°¿öµå °Ë»ö ½Ã ÅëÇÕ°Ë»ö »ó´Ü ¿µ¿ª¿¡ ³ëÃâ</li>'
-                + '<li>ÃÖ¼Ò ½ÅÃ»: 2ÀÏ</li>'
-                + '<li>ÃÖ¼Ò 5°³, ÃÖ´ë 10°³±îÁö ±¸¸Å °¡´É<br>(ÆÄ°ß ±â¾÷Àº ÃÖ´ë 15°³ ±¸¸Å °¡´É)</li>',
-                about2: '<li>±â¾÷¸í °Ë»ö ½Ã ÅëÇÕ°Ë»ö »ó´Ü ¿µ¿ª¿¡ ³ëÃâ</li>'
+                about1: '<li>í‚¤ì›Œë“œ ê²€ìƒ‰ ì‹œ í†µí•©ê²€ìƒ‰ ìƒë‹¨ ì˜ì—­ì— ë…¸ì¶œ</li>'
+                + '<li>ìµœì†Œ ì‹ ì²­: 2ì¼</li>'
+                + '<li>ìµœì†Œ 5ê°œ, ìµœëŒ€ 10ê°œê¹Œì§€ êµ¬ë§¤ ê°€ëŠ¥<br>(íŒŒê²¬ ê¸°ì—…ì€ ìµœëŒ€ 15ê°œ êµ¬ë§¤ ê°€ëŠ¥)</li>',
+                about2: '<li>ê¸°ì—…ëª… ê²€ìƒ‰ ì‹œ í†µí•©ê²€ìƒ‰ ìƒë‹¨ ì˜ì—­ì— ë…¸ì¶œ</li>'
             }
         ],
 
@@ -739,24 +739,3 @@
     });
 
 })(jQuery, window);
-/*
-     FILE ARCHIVED ON 02:57:54 Jul 22, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 07:24:55 Jan 28, 2019.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  LoadShardBlock: 65.346 (3)
-  esindex: 0.009
-  captures_list: 87.603
-  CDXLines.iter: 17.126 (3)
-  PetaboxLoader3.datanode: 96.777 (4)
-  exclusion.robots: 0.196
-  exclusion.robots.policy: 0.182
-  RedisCDXSource: 1.666
-  PetaboxLoader3.resolve: 35.955
-  load_resource: 100.62
-*/
