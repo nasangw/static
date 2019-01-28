@@ -1,4 +1,4 @@
-@CHARSET "EUC-KR";
+@charset "utf-8";
 
 button, label, a{cursor:pointer; vertical-align: top;}
 button::-moz-focus-inner, input::-moz-focus-inner{padding:0; border:0;}
@@ -247,7 +247,7 @@ button::-moz-focus-inner, input::-moz-focus-inner{padding:0; border:0;}
 .layer_over_dimmed.event_christmas2015 .define_list dd{ display: inline-block; vertical-align: top;}
 .layer_over_dimmed.event_christmas2015 .define_list:after{ content: '';display: table; clear: both;}
 
-/* WMG-7575 �����? ù �Ի����� �̺�Ʈ ���� */
+/* WMG-7575 �����? ù �Ի����� �̺�Ʈ ���� */
 .wrap_entry_event{position:fixed;width:237px;height:277px;margin-left:-118.5px;margin-top:-135.5px;border:1px solid #db4456;z-index:9999999;top:50%;left:50%;display:block;background-color:#f9e3e2;}
 .wrap_entry_event button{outline:none;}
 .wrap_entry_event .inner_wrap{position:relative;width:100%;margin-top:11px;text-align:center;}
@@ -265,7 +265,7 @@ button::-moz-focus-inner, input::-moz-focus-inner{padding:0; border:0;}
 .wrap_entry_event .inner_wrap.fail .desc_cont  .desc_txt .txt2{margin-top:10px;color:#db4456;text-decoration:underline;}
 .wrap_entry_event .inner_wrap.fail .desc_cont  .desc_txt .txt3{color:#8d7675;}
 .wrap_entry_event .inner_wrap.fail .btn_detail {margin-top:18px;}
-/* WMG-7575 �����? ù �Ի����� �̺�Ʈ ���� */
+/* WMG-7575 �����? ù �Ի����� �̺�Ʈ ���� */
 
 /* WMG-8368 �̷¼� ���� - ���� */
 .same_wrap {margin:10px 11px 0;background-color:#fff;color:#222;letter-spacing:-1px;}

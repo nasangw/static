@@ -1,4 +1,4 @@
-@charset "euc-kr";
+@charset "utf-8";
 
 body, div, dl, dt, dd, ul, ol, i, h1, h2, h3, h4, form, fieldset, p, button, header, footer, nav, article, figure, blockquote {margin:0; padding:0;}
 body {background:#fff; color:#666; font-size:14px;-webkit-text-size-adjust:none;}
