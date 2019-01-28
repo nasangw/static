@@ -1,0 +1,67 @@
+@charset "euc-kr";
+
+body, div, dl, dt, dd, ul, ol, i, h1, h2, h3, h4, form, fieldset, p, button, header, footer, nav, article, figure, blockquote {margin:0; padding:0;}
+body {background:#fff; color:#666; font-size:14px;-webkit-text-size-adjust:none;}
+input, select, textarea, button {font-size:inherit; font-family:inherit; line-height:inherit;}
+img, fieldset {border:0;}
+img, textarea {vertical-align:top;}
+input, select, label {vertical-align:middle;}
+ul, ol, li {list-style:none;}
+address, em, i {font-style:normal; font-weight:normal;}
+strong, b {font-weight:bold;}
+h1, h2, h3, h4, h5 {font-size:1em; font-weight:bold;}
+hr {display:none;}
+header, footer, nav, section, article {display:block;}
+legend {position:absolute; left:-9999px; text-indent: -1000em;}
+strong, em, span{ vertical-align: top;}
+
+/* table */
+table {border-collapse:collapse;table-layout: fixed;width: auto;max-width: none;min-width: 100%;}
+th, td{ margin: 0; padding: 0;}
+caption { visibility:hidden; font-size:1%; line-height:1%;}
+
+/* form element */
+a {color:inherit; text-decoration:none;}
+input,
+textarea,
+select {-webkit-appearance:none;border-radius:4px;color:#666666;}
+input[type="number"],input[type="tel"],
+input[type="text"],input[type="password"],input[type="email"],
+input[type="search"],
+textarea {border-radius:2px; -webkit-box-sizing:border-box; min-height:28px; border:1px solid #ccc; padding:0 8px;-webkit-appearance: none;}
+textarea {padding:8px;}
+input[type="checkbox"],
+input[type="radio"] {margin:0; border:1px solid #999;}
+input[type="radio"] {border-radius:8px; -webkit-appearance:radio;}
+input[type="checkbox"] {border-radius:4px;width:20px;height:20px;border:1px solid #909191;-webkit-appearance:checkbox;}
+input:checked[type="checkbox"],
+input:checked[type="radio"] {background-color:#2d2d2d; border:0;}
+input::-webkit-input-placeholder {color:#999;}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {display: none;}
+select{border:1px solid #a8adb4; padding:3px 35px 0 7px; min-height:29px;background:url(https://web.archive.org/web/20160401105134im_/http://www.saraminimage.co.kr/2012mobile/bg_1009_03.png) no-repeat 100% -742px;background-size:50px 1000px;box-sizing: border-box;}
+button{-webkit-appearance:none; border-radius:2px; cursor:pointer; border:0; color:#888; background-color:transparent;background:url(https://web.archive.org/web/20160401105134im_/http://www.saraminimage.co.kr/2012mobile/bg_1009_03.png) no-repeat;background-size:50px 1000px;}
+/*
+     FILE ARCHIVED ON 10:51:34 Apr 01, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:13:58 Jan 28, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 212.1 (3)
+  esindex: 0.009
+  captures_list: 266.811
+  CDXLines.iter: 12.651 (3)
+  PetaboxLoader3.datanode: 277.704 (5)
+  exclusion.robots.fetch: 33.417 (4)
+  exclusion.robots: 34.101
+  exclusion.robots.policy: 0.256
+  RedisCDXSource: 4.808
+  PetaboxLoader3.resolve: 48.858 (2)
+  load_resource: 133.17
+*/

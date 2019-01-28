@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* 인포 페이지 공통 */
+.info_content{background:#f3f3f3;padding:11px;letter-spacing:-1px;}
+.page_header_bar{font-size:15px;text-align:center;height:40px;border-bottom:2px solid #6c6c6c;background:#edf5fe;line-height:40px;}
+.info_content .bottom_btns{position:relative;}
+.info_content .confirm_btn2, .info_content .change_btn2{box-shadow:0 1px 3px #e2e2e2;border-radius:5px;text-align:center;line-height:48px;display:inline-block;margin:15px 0 50px 0;width:48%;height:48px;border:1px solid #adadad;background:#f6f6f6;color:#4368dd;font-weight:bold;background:-webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#e5e5e5));background:-moz-linear-gradient(top,  #fafafa,  #e5e5e5);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#e5e5e5');}
+.info_content .reset_btn2{box-shadow:0 1px 3px #e2e2e2;float:right;border-radius:5px;text-align:center;line-height:48px;display:inline-block;margin:15px 0 50px;margin-left:2%;width:48%;height:48px;border:1px solid #adadad;background:#f6f6f6;color:#4368dd;font-weight:bold;background:-webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#e5e5e5));background:-moz-linear-gradient(top,  #fafafa,  #e5e5e5);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#e5e5e5');}
+.info_content .confirm_btn, .info_content .change_btn{text-align:center;line-height:48px;display:inline-block;margin:15px 0 50px 0;width:48%;height:48px;border:1px solid #bebebe;background:#f9f9f9;color:#4368dd;font-weight:bold;box-shadow:inset 0 0 30px #fff;}
+.info_content .reset_btn{float:right;text-align:center;line-height:48px;display:inline-block;margin:15px 0 50px;margin-left:2%;width:48%;height:48px;border:1px solid #bebebe;background:#f9f9f9;color:#4368dd;font-weight:bold;box-shadow:inset 0 0 30px #fff;}
+
+/* 개인정보 수정1 */
+.info_content .person_info_desc{font-weight:normal;color:#666;text-align:center;margin:15px 0 22px 0;font-size:14px;}
+.info_content .person_info_desc strong{color:#666;font-weight:bold;}
+.info_content .person_info_desc strong.point{color:#f00;font-weight:normal;}
+.info_content .person_info_desc.group{text-align:left;padding-left:17px;margin-top:0;margin-bottom:27px;}
+.info_content .person_info_desc.group span{display:inline-block;}
+.info_content .person_info{font-weight:bold;color:#404655;text-align:center;margin:0 0 22px 0;font-size:20px;}
+.info_content .person_info.sns_login{padding-left:17px;text-align:left;margin:12px 0 5px 0;}
+.info_content .right_square_btn{position:relative;}
+.info_content .square_btn{position:absolute;top:9px;right:10px;border:1px solid #dcdcdc;padding:8px;border-radius:0;color:#87898e;width:54px;font-size:12px;}
+.info_content .big_square_btn{position:absolute;top:8px;right:10px;border:1px solid #dcdcdc;padding:8px;border-radius:0;color:#87898e;width:94px;font-size:12px;letter-spacing:-1px;}
+
+/* 개인정보 수정2 */
+.info_content .login_search_form .essential_info{background:#404655;border:1px solid #404655;min-height:31px;padding:12px;text-align:center;}
+.info_content .login_search_form .essential_info span{width:42%;display:inline-block;height:30px;font-size:13px;font-weight:bold;color:#fff;line-height:30px;letter-spacing:0;}
+.info_content .login_search_form .essential_info span.get_id{border-right:1px solid #535966;margin-right:12px;padding-right:16px;}
+.info_content .mail_agree .mail_agree_txt{display:inline-block;margin-right:12px;color:#404655;padding:6px 0 4px 0;}
+.info_content .mail_agree a{font-size:11px;color:#404655;text-decoration:underline;position:relative;bottom:2px;}
+.info_content .right_circle_btn{position:relative;}
+.info_content .email_agree_btn.on{display:inline-block;position:absolute;top:8px;right:10px;background:url(https://web.archive.org/web/20190128072442im_/http://www.saraminimage.co.kr/ui/mobile_login/email_agree_on.png) no-repeat 50% 50%;width:24px;height:24px;background-size:24px 24px;}
+.info_content .email_agree_btn.off{display:inline-block;position:absolute;top:8px;right:10px;background:url(https://web.archive.org/web/20190128072442im_/http://www.saraminimage.co.kr/ui/mobile_login/email_agree_off.png) no-repeat 50% 50%;width:24px;height:24px;background-size:24px 24px;}
+.info_content .no_cell .email_agree_btn.on{top:10px;}
+.info_content .no_cell .email_agree_btn.off{top:10px;}
+
+/* 비밀번호 수정 */
+.info_content .pw_change_desc{color:#666;text-align:center;font-weight:normal;font-size:14px;margin-top:13px;margin-bottom:4px;}
+.info_content .pw_change_desc strong{color:#ff0000;font-weight:normal;}
+
+/* 면접안내페이지 wmg-8545 */
+.interview_guide {padding:11px;color:#313131;letter-spacing:0;}
+.interview_guide .title {margin:0;height:55px;line-height:55px;font-size:22px;text-align:center;font-weight:bold;letter-spacing:-1px;}
+.interview_guide .desc {margin:0;font-size:12px;line-height:15px;}
+.interview_guide .table_wrap {margin-top:7px;padding:25px;background-color:#f7f7f7;}
+.interview_guide table.tbl_list {width:100%;font-size:13px;}
+.interview_guide table.tbl_list th {color:#101010;font-weight:bold;line-height:17px;text-align:left;vertical-align:top;}
+.interview_guide table.tbl_list td {padding-bottom:10px;line-height:17px;}
+.interview_guide table.tbl_list td a {text-decoration:underline;}
+.interview_guide table.tbl_list tr:last-child td {padding-bottom:0;}
+.interview_guide .txt_add {margin-top:9px;padding:25px;font-size:12px;line-height:18px;background-color:#f7f7f7;}
+
+.interview_guide .date_list {padding-top:13px;font-size:13px;letter-spacing:-1px;}
+.interview_guide .date_list > li {margin-bottom:5px;height:54px;color:#fff;}
+.interview_guide .date_list > li:last-child {margin-bottom:7px;}
+.interview_guide .date_list > li.typ_pos {background-color:#5582db;}
+.interview_guide .date_list > li.typ_impos {background-color:#ff7875;}
+.interview_guide .txt_desc {margin:0;padding:10px 0 5px;}
+.interview_guide .date_list > li.typ_other li a {color:#313131;}
+.interview_guide .date_list > li span.sec {display:table-cell;padding:0 0 0 70px;height:54px;border-bottom:0;color:#fff;line-height:18px;text-align:left;background:url(https://web.archive.org/web/20190128072442im_/http://www.saraminimage.co.kr/ui/layout/mypage_2016/ico_schedule_choice_big.png) no-repeat;vertical-align:middle;}
+.interview_guide .date_list > li.typ_pos span.sec {background-position:22px 10px;}
+.interview_guide .date_list > li.typ_impos span.sec {background-position:22px -90px;}
+.interview_guide .date_list > li>a {display:block;width:100%;height:100%;}
+
+/* 면접안내_랜딩페이지 추가 wmg-8545 */
+.interview_guide .noti_txt {padding-top:8px;}
+.interview_guide .noti_txt .txt {font-weight:bold;text-decoration:underline;}
+.interview_guide .noti_txt .txt02 {color:#313131;}
+.interview_guide.modify strong {display:block;padding-top:15px;font-size:13px;font-weight:bold;color:#101010;}
+.interview_guide.modify .table_wrap.before,
+.interview_guide.modify .table_wrap.before th {color:#999;}
+.interview_guide table.tbl_list td.cancel {text-decoration:line-through;}
+.interview_guide table.tbl_list td.answer,/* 응답 */
+.interview_guide table.tbl_list td.attend {color:#5582db;} /* 참석 */
+.interview_guide table.tbl_list td.absence {color:#ff7875;} /* 불참 */
+.interview_guide .btn_prev {display:block;line-height:42px;margin-top:15px;border:1px solid #bababa;background:#fff;color:#313131;letter-spacing:-1px;text-align:center;border-radius:2px;}
+
+/* WMG-11320 면접일정관리 수신설정 추가 */
+.interview_guide .info,
+.noti_txt .info {margin-top:20px;font-size:12px;}
+/*
+     FILE ARCHIVED ON 07:24:42 Jan 28, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:04:18 Jan 28, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 278.854 (3)
+  esindex: 0.007
+  captures_list: 300.966
+  CDXLines.iter: 17.063 (3)
+  PetaboxLoader3.datanode: 166.182 (4)
+  exclusion.robots: 0.303
+  exclusion.robots.policy: 0.285
+  RedisCDXSource: 1.564
+  PetaboxLoader3.resolve: 126.154 (4)
+  load_resource: 46.871
+*/
