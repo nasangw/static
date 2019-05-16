@@ -218,69 +218,72 @@ $('#btnBuy').on('click', function(e) {
 
 horizontalSpaceBetween = document.documentElement.offsetWidth > 500 ? 140 : 50;
 
-// set swiper for body of watch
-swiperHorizontal = new Swiper('#swiperHorizontal', {
-    // pagination: '.swiper-pagination',
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    paginationClickable: true,
-    spaceBetween: horizontalSpaceBetween,
-    // touchEventsTarget: 'wrapper',
-    speed: 700,
-    loop: true,
-    onTouchStart: function(e) {
-        $('#swiperHorizontal').addClass('up-zindex');
-    },
-    onTouchEnd: function(e) {
-        setTimeout(function(){
-            $('#swiperHorizontal').removeClass('up-zindex');
-        }, 300);
-    },
-    onInit: function(s) {
-        var active = $('#swiperHorizontal').find('.swiper-slide-active');
-        bodyCode = active.data('product-code');
-        bodyLabel = active.data('product-label');
-    },
-    onSlideChangeEnd: function(s) {
-        var active = $('#swiperHorizontal').find('.swiper-slide-active');
-        bodyCode = active.data('product-code');
-        bodyLabel = active.data('product-label');
-    },
-});
 
 // set swiper for body of strap
 swiperVertical = new Swiper('#swiperVertical', {
-    // pagination: '.swiper-pagination',
-    // paginationClickable: true,
-    // prevButton: '.swiper-button-prev',
-    // nextButton: '.swiper-button-next',
+    direction: 'vertical',
+    longSwipesRatio: 0.25,
+    init: false,
     slidesPerView: 'auto',
     centeredSlides: true,
     spaceBetween: 30,
-    direction: 'vertical',
-    // touchEventsTarget: 'wrapper',
     loop: true,
-    // onTouchStart: function(e) {
-    //     $('#swiperHorizontal').addClass('up-zindex');
-    // },
-    // onTouchEnd: function(e) {
-    //     setTimeout(function(){
-    //         $('#swiperHorizontal').removeClass('up-zindex');
-    //     }, 300);
-    // },
-    onInit: function(s) {
-        var active = $('#swiperVertical').find('.swiper-slide-active');
-        // strapCode = parseInt(active.data('product-code').substring(3));
-        strapCode = active.data('product-code');
-        strapLabel = active.data('product-label');
+    keyboard: {
+        enabled: true,
+        // onlyInViewport: true,
     },
-    onSlideChangeEnd: function(s) {
-        var active = $('#swiperVertical').find('.swiper-slide-active');
-        // strapCode = parseInt(active.data('product-code').substring(3));
-        strapCode = active.data('product-code');
-        strapLabel = active.data('product-label');
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 });
+swiperVertical.on('init', function() {
+    var active = $('#swiperVertical').find('.swiper-slide-active');
+    strapCode = active.data('product-code');
+    strapLabel = active.data('product-label');
+});
+swiperVertical.on('slideChangeTransitionEnd', function() {
+    var active = $('#swiperVertical').find('.swiper-slide-active');
+    strapCode = active.data('product-code');
+    strapLabel = active.data('product-label');
+});
+swiperVertical.init();
+
+
+// set swiper for body of watch
+swiperHorizontal = new Swiper('#swiperHorizontal', {
+    init: false,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: horizontalSpaceBetween,
+    speed: 700,
+    loop: true,
+    keyboard: {
+        enabled: true,
+        // onlyInViewport: true,
+    },
+});
+swiperHorizontal.on('init', function() {
+    var active = $('#swiperHorizontal').find('.swiper-slide-active');
+    bodyCode = active.data('product-code');
+    bodyLabel = active.data('product-label');
+});
+swiperHorizontal.on('slideChangeTransitionEnd', function() {
+    var active = $('#swiperHorizontal').find('.swiper-slide-active');
+    bodyCode = active.data('product-code');
+    bodyLabel = active.data('product-label');
+});
+swiperHorizontal.on('touchStart', function(e) {
+    $('#swiperHorizontal').addClass('up-zindex');
+});
+swiperHorizontal.on('touchEnd', function(e) {
+    setTimeout(function(){
+        $('#swiperHorizontal').removeClass('up-zindex');
+    }, 300);
+});
+swiperHorizontal.init();
+
+
 
 
 // disable bounce effect scroll on iPhone Browser

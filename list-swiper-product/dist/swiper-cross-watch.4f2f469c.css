@@ -74,7 +74,7 @@ ul, ol {
     margin-left: -160px;
     width: 66px;
     height: 380px;
-    background-image: url(../images/watch/bg_text_left.png);
+    background-image: url(/bg_text_left.54b76e2f.png);
 }
 .wrapper-cross .bg-text.bg-text-right {
     top: 120px;
@@ -82,9 +82,9 @@ ul, ol {
     margin-right: -160px;
     width: 66px;
     height: 252px;
-    background-image: url(../images/watch/bg_text_right.png);
+    background-image: url(/bg_text_right.a244df7b.png);
 }
-.wrapper-cross .btn-add {
+.wrapper-cross .wrap-button .btn-add {
     position: absolute;
     z-index: 20;
     border: 0;
@@ -95,15 +95,15 @@ ul, ol {
     line-height: 100%;
     font-size: 0;
     text-align: center;
-    background: url(../images/watch/btn_add.svg) 0 0 no-repeat;
+    background: url(/btn_add.c9173cd8.svg) 0 0 no-repeat;
     outline: none;
 }
-.wrapper-cross .target-strap {
+.wrapper-cross .wrap-button .target-strap {
     top: 60px;
     left: 50%;
     margin-left: 20px;
 }
-.wrapper-cross .target-body {
+.wrapper-cross .wrap-button .target-body {
     top: 160px;
     left: 50%;
     margin-left: 40px;
@@ -135,7 +135,7 @@ ul, ol {
     width: 116px;
     height: 101px;
     font-size: 0;
-    background: url(../images/watch/btn_buy.png) 0 0 no-repeat;
+    background: url(/btn_buy.de8d7f4c.png) 0 0 no-repeat;
     background-size: 116px 101px;
 }
 .wrapper-cross .layer-cart .list-item {
@@ -153,7 +153,7 @@ ul, ol {
     width: 18px;
     height: 18px;
     font-size: 0;
-    background: url(../images/watch/btn_remove.png) 50% 50% no-repeat;
+    background: url(/btn_remove.bd8dc42d.png) 50% 50% no-repeat;
     background-size: 16px 16px;
     vertical-align: top;
 }
@@ -309,7 +309,7 @@ ul, ol {
     width: 114px;
     height: 100px;
     font-size: 0;
-    background: url(../images/watch/btn_buy.png) 0 0 no-repeat;
+    background: url(/btn_buy.de8d7f4c.png) 0 0 no-repeat;
     background-size: contain;
 }
 .wrapper-cross .layer-cart .list-item {
@@ -326,7 +326,7 @@ ul, ol {
     width: 18px;
     height: 18px;
     font-size: 0;
-    background: url(../images/watch/btn_remove.png) 50% 50% no-repeat;
+    background: url(/btn_remove.bd8dc42d.png) 50% 50% no-repeat;
     background-size: 12px 12px;
     vertical-align: top;
 }
@@ -346,15 +346,18 @@ ul, ol {
     height: 336px;
     background-size: 80% 80%;
 }
-.wrapper-cross .target-strap {
+.wrapper-cross .wrap-button .target-strap {
     top: 110px;
     left: 50%;
     margin-left: 25px;
 }
-.wrapper-cross .target-body {
+.wrapper-cross .wrap-button .target-body {
     top: 252px;
     left: 50%;
     margin-left: 50px;
 }
 
 }
+
+
+/*# sourceMappingURL=/swiper-cross-watch.4f2f469c.css.map */

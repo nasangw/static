@@ -7,7 +7,6 @@
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
 <link rel="stylesheet" href="css/swiper.min.css">
 <link rel="stylesheet" href="css/swiper-cross-watch.css">
-<script src="js/jquery.min.js"></script>
 </head>
 <body>
 
@@ -21,7 +20,7 @@
 </header>
 
 <div class="wrapper-cross">
-    <!-- swiper for horizontal -->
+    <!-- swiper for vertical -->
     <div id="swiperVertical" class="swiper-container swiper-container-vertical">
         <div class="swiper-wrapper">
             <div class="swiper-slide" data-product-label="매쉬밴드" data-product-code="STR01">
@@ -55,10 +54,12 @@
                 <div class="background" style="background-image: url(images/watch/strap_10.png);"></div>
             </div>
         </div>
-        <!-- <div class="swiper-pagination"></div> -->
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
 
-    <!-- swiper for vertical -->
+    <!-- swiper for horizontal -->
     <div id="swiperHorizontal" class="swiper-container swiper-container-horizontal">
         <div class="swiper-wrapper">
             <div class="swiper-slide" data-product-label="Squre Body(Black) " data-product-code="B-SB">
@@ -74,24 +75,10 @@
                 <div class="background" style="background-image: url(images/watch/body_04.png);"></div>
             </div>
         </div>
-
-        <!-- 네비게이션 버튼 / 페이징  -->
-        <!-- <button type="button" class="swiper-button-prev">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 62" style="enable-background:new 0 0 32 62;" xml:space="preserve">
-                <polyline class="st0" points="31.4,0.5 0.9,31 31.4,61.5 "/>
-            </svg>
-        </button>
-        <button type="button" class="swiper-button-next">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 62" style="enable-background:new 0 0 32 62;" xml:space="preserve">
-                <polyline points="0.5,0.5 31,31 0.5,61.5 "/>
-            </svg>
-        </button> -->
     </div>
 
-    <div class="wrap-button">
-        <button type="button" id="btnTargetBody" class="btn-add target-body">add</button>
-        <button type="button" id="btnTargetStrap" class="btn-add target-strap">add</button>
-    </div>
+    <button type="button" id="btnTargetBody" class="btn-add target-body">add</button>
+    <button type="button" id="btnTargetStrap" class="btn-add target-strap">add</button>
 
     <div class="bg-text bg-text-left"></div>
     <div class="bg-text bg-text-right"></div>
@@ -109,7 +96,10 @@
     </div>
 </div>
 
-<script src="js/swiper.jquery.min.js"></script>
+<!-- <script src="js/jquery.min.js"></script> -->
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<!-- <script src="js/swiper.jquery.min.js"></script> -->
 <script src="js/swiper-cross-watch.js"></script>
 </body>
 </html>
